@@ -10,8 +10,8 @@
 function data_snapshots_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_climate_gov_section'.
-  $fields['node-data_snapshot_data_source_dev-field_climate_gov_section'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_climate_gov_section'.
+  $fields['node-data_snapshot_data_source-field_climate_gov_section'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -47,7 +47,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => array(
         0 => array(
           'tid' => '3471',
@@ -94,14 +94,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_catalog_url'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_catalog_url'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_catalog_url'.
+  $fields['node-data_snapshot_data_source-field_dssds_catalog_url'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_catalog_url',
+      'field_name' => 'field_dssds_catalog_url',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -125,7 +125,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'link_field',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'URL to Climate.gov Dataset Catalog record.',
@@ -152,7 +152,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_catalog_url',
+      'field_name' => 'field_dssds_catalog_url',
       'label' => 'Dataset Catalog Record URL',
       'required' => 1,
       'settings' => array(
@@ -186,14 +186,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_colors'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_colors'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_colors'.
+  $fields['node-data_snapshot_data_source-field_dssds_colors'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_colors',
+      'field_name' => 'field_dssds_colors',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -214,7 +214,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -241,7 +241,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_colors',
+      'field_name' => 'field_dssds_colors',
       'label' => 'How to Interpret Colors',
       'required' => 0,
       'settings' => array(
@@ -261,14 +261,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_data_access_url'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_data_access_url'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_data_access_url'.
+  $fields['node-data_snapshot_data_source-field_dssds_data_access_url'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_data_access_url',
+      'field_name' => 'field_dssds_data_access_url',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -292,7 +292,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'link_field',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -319,7 +319,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_data_access_url',
+      'field_name' => 'field_dssds_data_access_url',
       'label' => 'Data Access URL',
       'required' => 1,
       'settings' => array(
@@ -353,14 +353,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_data_format'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_data_format'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_data_format'.
+  $fields['node-data_snapshot_data_source-field_dssds_data_format'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_data_format',
+      'field_name' => 'field_dssds_data_format',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -381,7 +381,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -408,7 +408,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_data_format',
+      'field_name' => 'field_dssds_data_format',
       'label' => 'Data Format Description',
       'required' => 0,
       'settings' => array(
@@ -428,14 +428,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_data_matters'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_data_matters'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_data_matters'.
+  $fields['node-data_snapshot_data_source-field_dssds_data_matters'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_data_matters',
+      'field_name' => 'field_dssds_data_matters',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -456,7 +456,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -483,7 +483,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_data_matters',
+      'field_name' => 'field_dssds_data_matters',
       'label' => 'Why This Data Matters',
       'required' => 0,
       'settings' => array(
@@ -503,14 +503,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_data_provider'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_data_provider'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_data_provider'.
+  $fields['node-data_snapshot_data_source-field_dssds_data_provider'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_data_provider',
+      'field_name' => 'field_dssds_data_provider',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -534,7 +534,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'link_field',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Name of and URL to Data Provider\'s main site.',
@@ -561,7 +561,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_data_provider',
+      'field_name' => 'field_dssds_data_provider',
       'label' => 'Data Provider',
       'required' => 1,
       'settings' => array(
@@ -595,14 +595,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_description_auth'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_description_auth'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_description_auth'.
+  $fields['node-data_snapshot_data_source-field_dssds_description_auth'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_description_auth',
+      'field_name' => 'field_dssds_description_auth',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -625,7 +625,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -651,7 +651,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_description_auth',
+      'field_name' => 'field_dssds_description_auth',
       'label' => 'Description Author',
       'required' => 1,
       'settings' => array(
@@ -671,14 +671,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_editorial_commen'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_editorial_commen'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_editorial_commen'.
+  $fields['node-data_snapshot_data_source-field_dssds_editorial_commen'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_editorial_commen',
+      'field_name' => 'field_dssds_editorial_commen',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -699,7 +699,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -726,7 +726,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_editorial_commen',
+      'field_name' => 'field_dssds_editorial_commen',
       'label' => 'Additional Editorial Comments',
       'required' => 0,
       'settings' => array(
@@ -746,14 +746,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_english_descript'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_english_descript'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_english_descript'.
+  $fields['node-data_snapshot_data_source-field_dssds_english_descript'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_english_descript',
+      'field_name' => 'field_dssds_english_descript',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -774,7 +774,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -801,7 +801,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_english_descript',
+      'field_name' => 'field_dssds_english_descript',
       'label' => 'Plain English Description',
       'required' => 1,
       'settings' => array(
@@ -821,14 +821,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_framing_question'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_framing_question'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_framing_question'.
+  $fields['node-data_snapshot_data_source-field_dssds_framing_question'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_framing_question',
+      'field_name' => 'field_dssds_framing_question',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -849,7 +849,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -876,7 +876,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_framing_question',
+      'field_name' => 'field_dssds_framing_question',
       'label' => 'Framing Question',
       'required' => 1,
       'settings' => array(
@@ -896,14 +896,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_image_frequency'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_image_frequency'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_image_frequency'.
+  $fields['node-data_snapshot_data_source-field_dssds_image_frequency'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_image_frequency',
+      'field_name' => 'field_dssds_image_frequency',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -933,7 +933,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -959,7 +959,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_image_frequency',
+      'field_name' => 'field_dssds_image_frequency',
       'label' => 'Image Frequency',
       'required' => 1,
       'settings' => array(
@@ -976,14 +976,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_official_name'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_official_name'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_official_name'.
+  $fields['node-data_snapshot_data_source-field_dssds_official_name'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_official_name',
+      'field_name' => 'field_dssds_official_name',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1006,7 +1006,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Formal name for official data product.',
@@ -1033,7 +1033,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_official_name',
+      'field_name' => 'field_dssds_official_name',
       'label' => 'Official Name',
       'required' => 1,
       'settings' => array(
@@ -1053,14 +1053,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_plain_english_an'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_plain_english_an'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_plain_english_an'.
+  $fields['node-data_snapshot_data_source-field_dssds_plain_english_an'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_plain_english_an',
+      'field_name' => 'field_dssds_plain_english_an',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1081,7 +1081,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1107,7 +1107,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_plain_english_an',
+      'field_name' => 'field_dssds_plain_english_an',
       'label' => 'Plain English Answer',
       'required' => 1,
       'settings' => array(
@@ -1127,14 +1127,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_processing_envir'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_processing_envir'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_processing_envir'.
+  $fields['node-data_snapshot_data_source-field_dssds_processing_envir'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_processing_envir',
+      'field_name' => 'field_dssds_processing_envir',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1155,7 +1155,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Processing environment (include OS and software versions)',
@@ -1182,7 +1182,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_processing_envir',
+      'field_name' => 'field_dssds_processing_envir',
       'label' => 'Processing Environment',
       'required' => 1,
       'settings' => array(
@@ -1202,14 +1202,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_processing_steps'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_processing_steps'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_processing_steps'.
+  $fields['node-data_snapshot_data_source-field_dssds_processing_steps'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_processing_steps',
+      'field_name' => 'field_dssds_processing_steps',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1230,7 +1230,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1257,7 +1257,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_processing_steps',
+      'field_name' => 'field_dssds_processing_steps',
       'label' => 'Outline of Processing Steps',
       'required' => 1,
       'settings' => array(
@@ -1277,14 +1277,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_references'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_references'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_references'.
+  $fields['node-data_snapshot_data_source-field_dssds_references'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_references',
+      'field_name' => 'field_dssds_references',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1305,7 +1305,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'References used in writing the description.',
@@ -1332,7 +1332,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_references',
+      'field_name' => 'field_dssds_references',
       'label' => 'References',
       'required' => 1,
       'settings' => array(
@@ -1352,14 +1352,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_reviewer'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_reviewer'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_reviewer'.
+  $fields['node-data_snapshot_data_source-field_dssds_reviewer'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_reviewer',
+      'field_name' => 'field_dssds_reviewer',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1382,7 +1382,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'First and last name of subject matter expert reviewer.',
@@ -1409,7 +1409,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_reviewer',
+      'field_name' => 'field_dssds_reviewer',
       'label' => 'Reviewer',
       'required' => 1,
       'settings' => array(
@@ -1429,14 +1429,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_reviewer_affilia'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_reviewer_affilia'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_reviewer_affilia'.
+  $fields['node-data_snapshot_data_source-field_dssds_reviewer_affilia'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_reviewer_affilia',
+      'field_name' => 'field_dssds_reviewer_affilia',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1459,7 +1459,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1486,7 +1486,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_reviewer_affilia',
+      'field_name' => 'field_dssds_reviewer_affilia',
       'label' => 'Affiliation of Reviewer',
       'required' => 1,
       'settings' => array(
@@ -1506,14 +1506,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_secondary_questi'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_secondary_questi'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_secondary_questi'.
+  $fields['node-data_snapshot_data_source-field_dssds_secondary_questi'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_secondary_questi',
+      'field_name' => 'field_dssds_secondary_questi',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1534,7 +1534,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1560,7 +1560,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_secondary_questi',
+      'field_name' => 'field_dssds_secondary_questi',
       'label' => 'Secondary Question',
       'required' => 1,
       'settings' => array(
@@ -1580,14 +1580,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_technical_commen'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_technical_commen'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_technical_commen'.
+  $fields['node-data_snapshot_data_source-field_dssds_technical_commen'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_technical_commen',
+      'field_name' => 'field_dssds_technical_commen',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1608,7 +1608,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text_long',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1635,7 +1635,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_technical_commen',
+      'field_name' => 'field_dssds_technical_commen',
       'label' => 'Additional Technical Comments',
       'required' => 0,
       'settings' => array(
@@ -1655,14 +1655,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_data_source_dev-field_dssds_dev_themes'.
-  $fields['node-data_snapshot_data_source_dev-field_dssds_dev_themes'] = array(
+  // Exported field: 'node-data_snapshot_data_source-field_dssds_themes'.
+  $fields['node-data_snapshot_data_source-field_dssds_themes'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_dev_themes',
+      'field_name' => 'field_dssds_themes',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -1692,7 +1692,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_data_source_dev',
+      'bundle' => 'data_snapshot_data_source',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1718,7 +1718,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_dev_themes',
+      'field_name' => 'field_dssds_themes',
       'label' => 'Theme(s)',
       'required' => 1,
       'settings' => array(
@@ -1735,8 +1735,8 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_dev-body'.
-  $fields['node-data_snapshot_dev-body'] = array(
+  // Exported field: 'node-data_snapshot-body'.
+  $fields['node-data_snapshot-body'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
@@ -1765,7 +1765,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text_with_summary',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_dev',
+      'bundle' => 'data_snapshot',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1817,14 +1817,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_dev-field_datasnapshot_dev_day'.
-  $fields['node-data_snapshot_dev-field_datasnapshot_dev_day'] = array(
+  // Exported field: 'node-data_snapshot-field_datasnapshot_day'.
+  $fields['node-data_snapshot-field_datasnapshot_day'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_datasnapshot_dev_day',
+      'field_name' => 'field_datasnapshot_day',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1847,7 +1847,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_dev',
+      'bundle' => 'data_snapshot',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -1874,7 +1874,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_datasnapshot_dev_day',
+      'field_name' => 'field_datasnapshot_day',
       'label' => 'Day',
       'required' => 0,
       'settings' => array(
@@ -1894,14 +1894,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_dev-field_datasnapshot_dev_month'.
-  $fields['node-data_snapshot_dev-field_datasnapshot_dev_month'] = array(
+  // Exported field: 'node-data_snapshot-field_datasnapshot_month'.
+  $fields['node-data_snapshot-field_datasnapshot_month'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_datasnapshot_dev_month',
+      'field_name' => 'field_datasnapshot_month',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1924,7 +1924,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_dev',
+      'bundle' => 'data_snapshot',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'The month for the data snapshot',
@@ -1951,7 +1951,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_datasnapshot_dev_month',
+      'field_name' => 'field_datasnapshot_month',
       'label' => 'Month',
       'required' => 0,
       'settings' => array(
@@ -1971,14 +1971,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_dev-field_datasnapshot_dev_year'.
-  $fields['node-data_snapshot_dev-field_datasnapshot_dev_year'] = array(
+  // Exported field: 'node-data_snapshot-field_datasnapshot_year'.
+  $fields['node-data_snapshot-field_datasnapshot_year'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_datasnapshot_dev_year',
+      'field_name' => 'field_datasnapshot_year',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -2001,7 +2001,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'text',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_dev',
+      'bundle' => 'data_snapshot',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'The year the datasnapshot is for',
@@ -2028,7 +2028,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_datasnapshot_dev_year',
+      'field_name' => 'field_datasnapshot_year',
       'label' => 'Year',
       'required' => 0,
       'settings' => array(
@@ -2048,14 +2048,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_dev-field_dss_dev_data_set'.
-  $fields['node-data_snapshot_dev-field_dss_dev_data_set'] = array(
+  // Exported field: 'node-data_snapshot-field_dss_data_set'.
+  $fields['node-data_snapshot-field_dss_data_set'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dss_dev_data_set',
+      'field_name' => 'field_dss_data_set',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -2083,7 +2083,7 @@ function data_snapshots_field_default_fields() {
             'type' => 'none',
           ),
           'target_bundles' => array(
-            'data_snapshot_data_source_dev' => 'data_snapshot_data_source_dev',
+            'data_snapshot_data_source' => 'data_snapshot_data_source',
           ),
         ),
         'target_type' => 'node',
@@ -2092,7 +2092,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_dev',
+      'bundle' => 'data_snapshot',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -2123,7 +2123,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dss_dev_data_set',
+      'field_name' => 'field_dss_data_set',
       'label' => 'Data Set',
       'required' => 1,
       'settings' => array(
@@ -2140,14 +2140,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_dev-field_dss_dev_date_accessed'.
-  $fields['node-data_snapshot_dev-field_dss_dev_date_accessed'] = array(
+  // Exported field: 'node-data_snapshot-field_dss_date_accessed'.
+  $fields['node-data_snapshot-field_dss_date_accessed'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dss_dev_date_accessed',
+      'field_name' => 'field_dss_date_accessed',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -2172,7 +2172,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'datetime',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_dev',
+      'bundle' => 'data_snapshot',
       'deleted' => '0',
       'description' => 'Date that the data wrangler accessed the official product data.',
       'display' => array(
@@ -2212,7 +2212,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dss_dev_date_accessed',
+      'field_name' => 'field_dss_date_accessed',
       'label' => 'Data Ingest Date',
       'required' => 1,
       'settings' => array(
@@ -2242,14 +2242,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_dev-field_dss_dev_date_generated'.
-  $fields['node-data_snapshot_dev-field_dss_dev_date_generated'] = array(
+  // Exported field: 'node-data_snapshot-field_dss_date_generated'.
+  $fields['node-data_snapshot-field_dss_date_generated'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dss_dev_date_generated',
+      'field_name' => 'field_dss_date_generated',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -2274,7 +2274,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'datetime',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_dev',
+      'bundle' => 'data_snapshot',
       'deleted' => '0',
       'description' => 'Date the Data Snapshot was generated',
       'display' => array(
@@ -2314,7 +2314,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dss_dev_date_generated',
+      'field_name' => 'field_dss_date_generated',
       'label' => 'Date Generated',
       'required' => 1,
       'settings' => array(
@@ -2344,14 +2344,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_dev-field_dss_dev_displayed_image'.
-  $fields['node-data_snapshot_dev-field_dss_dev_displayed_image'] = array(
+  // Exported field: 'node-data_snapshot-field_dss_displayed_image'.
+  $fields['node-data_snapshot-field_dss_displayed_image'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dss_dev_displayed_image',
+      'field_name' => 'field_dss_displayed_image',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -2375,7 +2375,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'link_field',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_dev',
+      'bundle' => 'data_snapshot',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -2402,7 +2402,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dss_dev_displayed_image',
+      'field_name' => 'field_dss_displayed_image',
       'label' => 'Displayed Image',
       'required' => 1,
       'settings' => array(
@@ -2436,14 +2436,14 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_dev-field_dss_dev_downloads'.
-  $fields['node-data_snapshot_dev-field_dss_dev_downloads'] = array(
+  // Exported field: 'node-data_snapshot-field_dss_downloads'.
+  $fields['node-data_snapshot-field_dss_downloads'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dss_dev_downloads',
+      'field_name' => 'field_dss_downloads',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -2467,7 +2467,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'link_field',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_dev',
+      'bundle' => 'data_snapshot',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',
@@ -2494,7 +2494,7 @@ function data_snapshots_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dss_dev_downloads',
+      'field_name' => 'field_dss_downloads',
       'label' => 'Downloads',
       'required' => 0,
       'settings' => array(
@@ -2528,8 +2528,8 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_dev-field_related_nodes'.
-  $fields['node-data_snapshot_dev-field_related_nodes'] = array(
+  // Exported field: 'node-data_snapshot-field_related_nodes'.
+  $fields['node-data_snapshot-field_related_nodes'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -2564,7 +2564,7 @@ function data_snapshots_field_default_fields() {
           ),
           'target_bundles' => array(
             'climate_current_events' => 'climate_current_events',
-            'data_snapshot_dev' => 'data_snapshot_dev',
+            'data_snapshot' => 'data_snapshot',
             'news_features_featured_image' => 'news_features_featured_image',
             'news_features_video' => 'news_features_video',
             'nf_feature' => 'nf_feature',
@@ -2578,7 +2578,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'entityreference',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_dev',
+      'bundle' => 'data_snapshot',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => 'Recommended posts from climate.gov for this data snapshot',
@@ -2631,8 +2631,8 @@ function data_snapshots_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-data_snapshot_dev-field_term_clean'.
-  $fields['node-data_snapshot_dev-field_term_clean'] = array(
+  // Exported field: 'node-data_snapshot-field_term_clean'.
+  $fields['node-data_snapshot-field_term_clean'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
@@ -2668,7 +2668,7 @@ function data_snapshots_field_default_fields() {
       'type' => 'taxonomy_term_reference',
     ),
     'field_instance' => array(
-      'bundle' => 'data_snapshot_dev',
+      'bundle' => 'data_snapshot',
       'default_value' => NULL,
       'deleted' => '0',
       'description' => '',

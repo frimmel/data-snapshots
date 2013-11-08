@@ -14,12 +14,12 @@ function data_snapshots_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_climategov_metadata|node|data_snapshot_dev|form';
+  $field_group->identifier = 'group_climategov_metadata|node|data_snapshot|form';
   $field_group->group_name = 'group_climategov_metadata';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'data_snapshot_dev';
+  $field_group->bundle = 'data_snapshot';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_dss_dev_tabs';
+  $field_group->parent_name = 'group_dss_tabs';
   $field_group->data = array(
     'label' => 'Climate.gov Metadata',
     'weight' => '3',
@@ -38,25 +38,25 @@ function data_snapshots_field_group_info() {
       ),
     ),
   );
-  $export['group_climategov_metadata|node|data_snapshot_dev|form'] = $field_group;
+  $export['group_climategov_metadata|node|data_snapshot|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_datasnapshot_edit_info|node|data_snapshot_dev|form';
+  $field_group->identifier = 'group_datasnapshot_edit_info|node|data_snapshot|form';
   $field_group->group_name = 'group_datasnapshot_edit_info';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'data_snapshot_dev';
+  $field_group->bundle = 'data_snapshot';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_dss_dev_tabs';
+  $field_group->parent_name = 'group_dss_tabs';
   $field_group->data = array(
     'label' => 'Editable Information',
     'weight' => '1',
     'children' => array(
       0 => 'body',
       1 => 'field_related_nodes',
-      2 => 'field_dss_dev_downloads',
-      3 => 'field_dss_dev_displayed_image',
+      2 => 'field_dss_downloads',
+      3 => 'field_dss_displayed_image',
       4 => 'title',
     ),
     'format_type' => 'htab',
@@ -69,27 +69,27 @@ function data_snapshots_field_group_info() {
       ),
     ),
   );
-  $export['group_datasnapshot_edit_info|node|data_snapshot_dev|form'] = $field_group;
+  $export['group_datasnapshot_edit_info|node|data_snapshot|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_datasnapshot_image_meta|node|data_snapshot_dev|form';
+  $field_group->identifier = 'group_datasnapshot_image_meta|node|data_snapshot|form';
   $field_group->group_name = 'group_datasnapshot_image_meta';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'data_snapshot_dev';
+  $field_group->bundle = 'data_snapshot';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_dss_dev_tabs';
+  $field_group->parent_name = 'group_dss_tabs';
   $field_group->data = array(
     'label' => 'Image Metadata',
     'weight' => '2',
     'children' => array(
-      0 => 'field_datasnapshot_dev_year',
-      1 => 'field_datasnapshot_dev_month',
-      2 => 'field_datasnapshot_dev_day',
-      3 => 'field_dss_dev_date_generated',
-      4 => 'field_dss_dev_date_accessed',
-      5 => 'field_dss_dev_data_set',
+      0 => 'field_datasnapshot_year',
+      1 => 'field_datasnapshot_month',
+      2 => 'field_datasnapshot_day',
+      3 => 'field_dss_date_generated',
+      4 => 'field_dss_date_accessed',
+      5 => 'field_dss_data_set',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -101,15 +101,15 @@ function data_snapshots_field_group_info() {
       ),
     ),
   );
-  $export['group_datasnapshot_image_meta|node|data_snapshot_dev|form'] = $field_group;
+  $export['group_datasnapshot_image_meta|node|data_snapshot|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_dss_dev_tabs|node|data_snapshot_dev|form';
-  $field_group->group_name = 'group_dss_dev_tabs';
+  $field_group->identifier = 'group_dss_tabs|node|data_snapshot|form';
+  $field_group->group_name = 'group_dss_tabs';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'data_snapshot_dev';
+  $field_group->bundle = 'data_snapshot';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -128,17 +128,17 @@ function data_snapshots_field_group_info() {
       ),
     ),
   );
-  $export['group_dss_dev_tabs|node|data_snapshot_dev|form'] = $field_group;
+  $export['group_dss_tabs|node|data_snapshot|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_dssds_climate_gov|node|data_snapshot_data_source_dev|form';
+  $field_group->identifier = 'group_dssds_climate_gov|node|data_snapshot_data_source|form';
   $field_group->group_name = 'group_dssds_climate_gov';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'data_snapshot_data_source_dev';
+  $field_group->bundle = 'data_snapshot_data_source';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_dssds_dev_tabs';
+  $field_group->parent_name = 'group_dssds_tabs';
   $field_group->data = array(
     'label' => 'Climate.gov Metadata',
     'weight' => '7',
@@ -158,27 +158,27 @@ function data_snapshots_field_group_info() {
       ),
     ),
   );
-  $export['group_dssds_climate_gov|node|data_snapshot_data_source_dev|form'] = $field_group;
+  $export['group_dssds_climate_gov|node|data_snapshot_data_source|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_dssds_dev_left_sidebar|node|data_snapshot_data_source_dev|full';
-  $field_group->group_name = 'group_dssds_dev_left_sidebar';
+  $field_group->identifier = 'group_dssds_left_sidebar|node|data_snapshot_data_source|full';
+  $field_group->group_name = 'group_dssds_left_sidebar';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'data_snapshot_data_source_dev';
+  $field_group->bundle = 'data_snapshot_data_source';
   $field_group->mode = 'full';
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => '',
     'weight' => '1',
     'children' => array(
-      0 => 'field_dssds_dev_reviewer_affilia',
-      1 => 'field_dssds_dev_official_name',
-      2 => 'field_dssds_dev_data_access_url',
-      3 => 'field_dssds_dev_catalog_url',
-      4 => 'field_dssds_dev_reviewer',
-      5 => 'field_dssds_dev_data_provider',
+      0 => 'field_dssds_reviewer_affilia',
+      1 => 'field_dssds_official_name',
+      2 => 'field_dssds_data_access_url',
+      3 => 'field_dssds_catalog_url',
+      4 => 'field_dssds_reviewer',
+      5 => 'field_dssds_data_provider',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -194,25 +194,25 @@ function data_snapshots_field_group_info() {
       'formatter' => 'collapsible',
     ),
   );
-  $export['group_dssds_dev_left_sidebar|node|data_snapshot_data_source_dev|full'] = $field_group;
+  $export['group_dssds_left_sidebar|node|data_snapshot_data_source|full'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_dssds_dev_metadata|node|data_snapshot_data_source_dev|form';
-  $field_group->group_name = 'group_dssds_dev_metadata';
+  $field_group->identifier = 'group_dssds_metadata|node|data_snapshot_data_source|form';
+  $field_group->group_name = 'group_dssds_metadata';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'data_snapshot_data_source_dev';
+  $field_group->bundle = 'data_snapshot_data_source';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_dssds_dev_tabs';
+  $field_group->parent_name = 'group_dssds_tabs';
   $field_group->data = array(
     'label' => 'Data set Metadata',
     'weight' => '1',
     'children' => array(
-      0 => 'field_dssds_dev_official_name',
-      1 => 'field_dssds_dev_themes',
-      2 => 'field_dssds_dev_catalog_url',
-      3 => 'field_dssds_dev_image_frequency',
+      0 => 'field_dssds_official_name',
+      1 => 'field_dssds_themes',
+      2 => 'field_dssds_catalog_url',
+      3 => 'field_dssds_image_frequency',
       4 => 'title',
     ),
     'format_type' => 'htab',
@@ -225,24 +225,24 @@ function data_snapshots_field_group_info() {
       ),
     ),
   );
-  $export['group_dssds_dev_metadata|node|data_snapshot_data_source_dev|form'] = $field_group;
+  $export['group_dssds_metadata|node|data_snapshot_data_source|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_dssds_dev_processing|node|data_snapshot_data_source_dev|form';
-  $field_group->group_name = 'group_dssds_dev_processing';
+  $field_group->identifier = 'group_dssds_processing|node|data_snapshot_data_source|form';
+  $field_group->group_name = 'group_dssds_processing';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'data_snapshot_data_source_dev';
+  $field_group->bundle = 'data_snapshot_data_source';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_dssds_dev_tabs';
+  $field_group->parent_name = 'group_dssds_tabs';
   $field_group->data = array(
     'label' => 'Processing Environment',
     'weight' => '3',
     'children' => array(
-      0 => 'field_dssds_dev_processing_steps',
-      1 => 'field_dssds_dev_processing_envir',
-      2 => 'field_dssds_dev_technical_commen',
+      0 => 'field_dssds_processing_steps',
+      1 => 'field_dssds_processing_envir',
+      2 => 'field_dssds_technical_commen',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -254,24 +254,24 @@ function data_snapshots_field_group_info() {
       ),
     ),
   );
-  $export['group_dssds_dev_processing|node|data_snapshot_data_source_dev|form'] = $field_group;
+  $export['group_dssds_processing|node|data_snapshot_data_source|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_dssds_dev_provider|node|data_snapshot_data_source_dev|form';
-  $field_group->group_name = 'group_dssds_dev_provider';
+  $field_group->identifier = 'group_dssds_provider|node|data_snapshot_data_source|form';
+  $field_group->group_name = 'group_dssds_provider';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'data_snapshot_data_source_dev';
+  $field_group->bundle = 'data_snapshot_data_source';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_dssds_dev_tabs';
+  $field_group->parent_name = 'group_dssds_tabs';
   $field_group->data = array(
     'label' => 'Data Provider',
     'weight' => '4',
     'children' => array(
-      0 => 'field_dssds_dev_data_access_url',
-      1 => 'field_dssds_dev_data_format',
-      2 => 'field_dssds_dev_data_provider',
+      0 => 'field_dssds_data_access_url',
+      1 => 'field_dssds_data_format',
+      2 => 'field_dssds_data_provider',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -283,27 +283,27 @@ function data_snapshots_field_group_info() {
       ),
     ),
   );
-  $export['group_dssds_dev_provider|node|data_snapshot_data_source_dev|form'] = $field_group;
+  $export['group_dssds_provider|node|data_snapshot_data_source|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_dssds_dev_tabs|node|data_snapshot_data_source_dev|form';
-  $field_group->group_name = 'group_dssds_dev_tabs';
+  $field_group->identifier = 'group_dssds_tabs|node|data_snapshot_data_source|form';
+  $field_group->group_name = 'group_dssds_tabs';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'data_snapshot_data_source_dev';
+  $field_group->bundle = 'data_snapshot_data_source';
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Form Tabs',
     'weight' => '0',
     'children' => array(
-      0 => 'group_dssds_dev_text',
+      0 => 'group_dssds_text',
       1 => 'group_dssds_climate_gov',
       2 => 'group_dssds_people',
-      3 => 'group_dssds_dev_provider',
-      4 => 'group_dssds_dev_metadata',
-      5 => 'group_dssds_dev_processing',
+      3 => 'group_dssds_provider',
+      4 => 'group_dssds_metadata',
+      5 => 'group_dssds_processing',
     ),
     'format_type' => 'htabs',
     'format_settings' => array(
@@ -313,29 +313,29 @@ function data_snapshots_field_group_info() {
       ),
     ),
   );
-  $export['group_dssds_dev_tabs|node|data_snapshot_data_source_dev|form'] = $field_group;
+  $export['group_dssds_tabs|node|data_snapshot_data_source|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_dssds_dev_text|node|data_snapshot_data_source_dev|form';
-  $field_group->group_name = 'group_dssds_dev_text';
+  $field_group->identifier = 'group_dssds_text|node|data_snapshot_data_source|form';
+  $field_group->group_name = 'group_dssds_text';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'data_snapshot_data_source_dev';
+  $field_group->bundle = 'data_snapshot_data_source';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_dssds_dev_tabs';
+  $field_group->parent_name = 'group_dssds_tabs';
   $field_group->data = array(
     'label' => 'Editable Text',
     'weight' => '2',
     'children' => array(
-      0 => 'field_dssds_dev_colors',
-      1 => 'field_dssds_dev_data_matters',
-      2 => 'field_dssds_dev_editorial_commen',
-      3 => 'field_dssds_dev_references',
-      4 => 'field_dssds_dev_framing_question',
-      5 => 'field_dssds_dev_english_descript',
-      6 => 'field_dssds_dev_plain_english_an',
-      7 => 'field_dssds_dev_secondary_questi',
+      0 => 'field_dssds_colors',
+      1 => 'field_dssds_data_matters',
+      2 => 'field_dssds_editorial_commen',
+      3 => 'field_dssds_references',
+      4 => 'field_dssds_framing_question',
+      5 => 'field_dssds_english_descript',
+      6 => 'field_dssds_plain_english_an',
+      7 => 'field_dssds_secondary_questi',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -347,24 +347,24 @@ function data_snapshots_field_group_info() {
       ),
     ),
   );
-  $export['group_dssds_dev_text|node|data_snapshot_data_source_dev|form'] = $field_group;
+  $export['group_dssds_text|node|data_snapshot_data_source|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_dssds_people|node|data_snapshot_data_source_dev|form';
+  $field_group->identifier = 'group_dssds_people|node|data_snapshot_data_source|form';
   $field_group->group_name = 'group_dssds_people';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'data_snapshot_data_source_dev';
+  $field_group->bundle = 'data_snapshot_data_source';
   $field_group->mode = 'form';
-  $field_group->parent_name = 'group_dssds_dev_tabs';
+  $field_group->parent_name = 'group_dssds_tabs';
   $field_group->data = array(
     'label' => 'People Involved',
     'weight' => '6',
     'children' => array(
-      0 => 'field_dssds_dev_reviewer_affilia',
-      1 => 'field_dssds_dev_description_auth',
-      2 => 'field_dssds_dev_reviewer',
+      0 => 'field_dssds_reviewer_affilia',
+      1 => 'field_dssds_description_auth',
+      2 => 'field_dssds_reviewer',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -376,7 +376,7 @@ function data_snapshots_field_group_info() {
       ),
     ),
   );
-  $export['group_dssds_people|node|data_snapshot_data_source_dev|form'] = $field_group;
+  $export['group_dssds_people|node|data_snapshot_data_source|form'] = $field_group;
 
   return $export;
 }

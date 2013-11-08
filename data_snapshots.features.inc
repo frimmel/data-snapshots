@@ -9,18 +9,18 @@
  */
 function data_snapshots_node_info() {
   $items = array(
-    'data_snapshot_data_source_dev' => array(
-      'name' => t('Data Snapshot Data Source Dev'),
+    'data_snapshot_data_source' => array(
+      'name' => t('Data Snapshot Data Source'),
       'base' => 'node_content',
-      'description' => t('Dev content type for Data Snapshot Data Sources'),
+      'description' => t('Content type for Data Snapshot Data Sources'),
       'has_title' => '1',
       'title_label' => t('Public Name for Dataset'),
       'help' => '',
     ),
-    'data_snapshot_dev' => array(
-      'name' => t('Data Snapshot Dev'),
+    'data_snapshot' => array(
+      'name' => t('Data Snapshot'),
       'base' => 'node_content',
-      'description' => t('A development version of the data snapshot content type.'),
+      'description' => t('Content type for Data Snapshots'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
