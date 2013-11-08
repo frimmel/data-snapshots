@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Data Snapshots feature.
+ */
+
+include_once 'data_snapshots.features.inc';
