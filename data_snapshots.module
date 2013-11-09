@@ -2,16 +2,23 @@
 
 include_once 'data_snapshots.fields.data_snapshot_data_source.inc';
 include_once 'data_snapshots.fields.data_snapshot.inc';
+include_once 'data_snapshots.field_groups.inc';
 
-//   /**
-//    * Implements hook_ctools_plugin_api().
-//    */
-//   function data_snapshots_ctools_plugin_api() {
-//     list($module, $api) = func_get_args();
-//     if ($module == 'field_group' && $api == 'field_group') {
-//       return array('version' => 1);
-//     }    
-//   }
+//function hook_ctools_plugin_api($module, $api) {
+//  if ($module == 'field_group' && $api == 'field_group') {
+//    return array('version' => 1);
+//  }
+//}
+
+/**
+ * Implements hook_ctools_plugin_api().
+ */
+function data_snapshots_ctools_plugin_api() {
+  list($module, $api) = func_get_args();
+  if ($module == 'field_group' && $api == 'field_group') {
+    return array('version' => 1);
+  }    
+}
 
 function data_snapshots_node_info() {
   $items = array(
@@ -40,7 +47,7 @@ function data_snapshots_node_type_insert($content_type) {
   if ($content_type->type == 'data_snapshot') {
     foreach (data_snapshots_fields_data_snapshot() as $field) {
       field_create_field($field['field_config']);
-      $instance = $field['field_config'];
+      $instance = $field['field_instance'];
       $instance['entity_type'] = 'node';
       $instance['bundle'] = 'data_snapshot';
       field_create_instance($instance);
@@ -50,7 +57,7 @@ function data_snapshots_node_type_insert($content_type) {
   if ($content_type->type == 'data_snapshot_data_source') {
     foreach (data_snapshots_fields_data_snapshot_data_source() as $field) {
       field_create_field($field['field_config']);
-      $instance = $field['field_config'];
+      $instance = $field['field_instance'];
       $instance['entity_type'] = 'node';
       $instance['bundle'] = 'data_snapshot_data_source';
       field_create_instance($instance);
