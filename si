@@ -1,0 +1,7 @@
+#! /bin/bash
+
+drush -y site-install
+drush upwd admin --password=`cat .password`
+
+drush -y en global_dependencies taxonomy_csv node_export
+drush vocimp --vocabulary_id=section /var/vsites/datasnapshots.nemac.com/project/html/sites/all/modules/data_snapshots/section-vocab.csv flat
