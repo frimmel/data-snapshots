@@ -1,7 +1,16 @@
 #! /bin/bash
 
+# re-install drupal; this completely replaces the current database
 drush -y site-install
+
+# reset the admin user password
 drush upwd admin --password=`cat .password`
 
+# disable comment module
+drush -y dis comment
+
+# install several modules that we need for development
 drush -y en global_dependencies taxonomy_csv node_export
+
+# import some taxonomy vocab terms
 drush vocimp --vocabulary_id=section /var/vsites/datasnapshots.nemac.com/project/html/sites/all/modules/data_snapshots/section-vocab.csv flat

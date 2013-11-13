@@ -10,6 +10,32 @@ include_once 'data_snapshots.field_groups.inc';
 //  }
 //}
 
+
+/*
+function data_snapshots_theme_registry_alter(&$theme_registry) {
+  $theme_registry["data_snapshot"]["path"] = drupal_get_path('module', 'data_snapshot');
+}
+*/
+
+function data_snapshots_theme($existing, $type, $theme, $path) {
+  return array (
+                'node__data_snapshot' => array(
+                                         'template' => 'node--data-snapshot',
+                                         ),
+                );
+}
+
+/*
+function data_snapshots_theme() {
+  return array(
+    'data_snapshot' => array(
+      'template' => 'data-snapshot',       // define xxx-xxx.tpl.php inside module
+      'variables' => array('xxx' => null), // define $xxx so it will available in your xxx-xxx.tpl.php
+    ),
+  );
+}
+*/
+
 /**
  * Implements hook_ctools_plugin_api().
  */
