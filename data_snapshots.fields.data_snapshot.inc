@@ -921,7 +921,7 @@ function data_snapshots_fields_data_snapshot() {
             'depth' => '',
           ),
         ),
-        'options_list_callback' => 'content_taxonomy_allowed_values',
+        // 'options_list_callback' => 'content_taxonomy_allowed_values',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
