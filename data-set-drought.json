@@ -120,6 +120,15 @@
                 }
             ]
         }, 
+        "field_dssds_machine_name": {
+            "und": [
+                {
+                    "format": null, 
+                    "safe_value": "usdm", 
+                    "value": "usdm"
+                }
+            ]
+        }, 
         "field_dssds_plain_english_an": {
             "und": [
                 {

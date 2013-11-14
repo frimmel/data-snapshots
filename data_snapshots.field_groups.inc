@@ -170,11 +170,12 @@ function data_snapshots_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_dssds_reviewer_affilia',
-      1 => 'field_dssds_official_name',
-      2 => 'field_dssds_data_access_url',
-      3 => 'field_dssds_catalog_url',
-      4 => 'field_dssds_reviewer',
-      5 => 'field_dssds_data_provider',
+      1 => 'field_dssds_machine_name',
+      2 => 'field_dssds_official_name',
+      3 => 'field_dssds_data_access_url',
+      4 => 'field_dssds_catalog_url',
+      5 => 'field_dssds_reviewer',
+      6 => 'field_dssds_data_provider',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -206,10 +207,11 @@ function data_snapshots_field_group_info() {
     'weight' => '1',
     'children' => array(
       0 => 'field_dssds_official_name',
-      1 => 'field_dssds_themes',
-      2 => 'field_dssds_catalog_url',
-      3 => 'field_dssds_image_frequency',
-      4 => 'title',
+      1 => 'field_dssds_machine_name',
+      2 => 'field_dssds_themes',
+      3 => 'field_dssds_catalog_url',
+      4 => 'field_dssds_image_frequency',
+      5 => 'title',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
