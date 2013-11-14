@@ -77,7 +77,8 @@
  * @see template_preprocess_node()
  * @see template_process()
  */
-  //dsm($content);
+  //dsm($view_mode);
+  //dsm($node);
   //dsm($content['field_datasnapshot_year']);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
@@ -99,21 +100,22 @@
 
   <div class="content clearfix"<?php print $content_attributes; ?>>
     <?php
+    if ($view_mode == "full"): ?>
+      <table>
+         <tr><td>field_datasnapshot_year</td>        <td><?php print $node->{'field_datasnapshot_year'}['und'][0]['value']; ?></td></tr>
+         <tr><td>field_datasnapshot_month</td>       <td><?php print $node->{'field_datasnapshot_month'}['und'][0]['value']; ?></td></tr>
+         <tr><td>field_datasnapshot_day</td>         <td><?php print $node->{'field_datasnapshot_day'}['und'][0]['value']; ?></td></tr>
+         <tr><td>field_dss_date_generated</td>       <td><?php print $node->{'field_dss_date_generated'}['und'][0]['value']; ?></td></tr>
+         <tr><td>field_dss_date_accessed</td>        <td><?php print $node->{'field_dss_date_accessed'}['und'][0]['value']; ?></td></tr>
+         <tr><td>field_dss_data_set nid</td>         <td><?php print $node->{'field_dss_data_set'}['und'][0]['target_id']; ?></td></tr>
+         <tr><td>field_dss_displayed_image</td>      <td><img src="<?php print $node->{'field_dss_displayed_image'}['und'][0]['url']; ?>"></td></tr>
+       </table>
+     <?php else:
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
-      hide($content['field_datasnapshot_year']);
-//      print render($content);
-    ?>
-<table>
-<tr><td>field_datasnapshot_year</td>        <td><?php print render($content['field_datasnapshot_year']['#items']['0']['value']); ?></td></tr>
-<tr><td>field_datasnapshot_month</td>       <td><?php print render($content['field_datasnapshot_month']['#items']['0']['value']); ?></td></tr>
-<tr><td>field_datasnapshot_day</td>         <td><?php print render($content['field_datasnapshot_day']['#items']['0']['value']); ?></td></tr>
-<tr><td>field_dss_date_generated</td>       <td><?php print render($content['field_dss_date_generated']['#items']['0']['value']); ?></td></tr>
-<tr><td>field_dss_date_accessed</td>        <td><?php print render($content['field_dss_date_accessed']['#items']['0']['value']); ?></td></tr>
-<tr><td>field_dss_data_set nid</td>             <td><?php print render($content['field_dss_data_set']['#items']['0']['target_id']); ?></td></tr>
-<tr><td>field_dss_displayed_image</td>      <td><img src="<?php print $content['field_dss_displayed_image']['#items']['0']['url']; ?>"></td></tr>
-</table>
+      print render($content); ?>
+    <?php endif; ?>
   </div>
   <?php
     // Remove the "Add new comment" link on the teaser page or if the comment
@@ -122,7 +124,7 @@
       unset($content['links']['comment']['#links']['comment-add']);
     }
     // Only display the wrapper div if there are links.
-    $links = render($content['links']);
+    $links = $content['links'];
     if ($links):
   ?>
     <div class="link-wrapper">
