@@ -80,6 +80,8 @@
   //dsm($view_mode);
   //dsm($node);
   //dsm($content['field_datasnapshot_year']);
+  dsm('tpl.php');
+  dsm($node);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
@@ -109,6 +111,7 @@
          <tr><td>field_dss_date_accessed</td>        <td><?php print $node->{'field_dss_date_accessed'}['und'][0]['value']; ?></td></tr>
          <tr><td>field_dss_ds_mname</td>             <td><?php print $node->{'field_dss_ds_mname'}['und'][0]['value']; ?></td></tr>
          <tr><td>field_dss_displayed_image</td>      <td><img src="<?php print $node->{'field_dss_displayed_image'}['und'][0]['url']; ?>"></td></tr>
+         <tr><td>Data Set</td>                       <td><?php print render($content['dataset']);  ?></td></tr>
        </table>
      <?php else:
       // We hide the comments and links now so that we can render them later.
