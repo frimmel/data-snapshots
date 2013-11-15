@@ -2,8 +2,6 @@
 
 drush -y en data_snapshots
 
-drush vocimp --vocabulary_id=data_snapshot_data_set_frequency \
-   /var/vsites/datasnapshots.nemac.com/project/html/sites/all/modules/data_snapshots/data_snapshot_data_set_frequency-vocab.csv flat
+drush vocimp --vocabulary_id=data_snapshot_data_set_frequency `pwd`/data_snapshot_data_set_frequency-vocab.csv flat
 
-drush vocimp --vocabulary_id=data_snapshots_themes \
-   /var/vsites/datasnapshots.nemac.com/project/html/sites/all/modules/data_snapshots/data_snapshots_themes-vocab.csv flat
+drush vocimp --vocabulary_id=data_snapshots_themes `pwd`/data_snapshots_themes-vocab.csv flat

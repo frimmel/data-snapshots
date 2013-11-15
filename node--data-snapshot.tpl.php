@@ -80,8 +80,8 @@
   //dsm($view_mode);
   //dsm($node);
   //dsm($content['field_ds_year']);
-  dsm('tpl.php');
-  dsm($node);
+  //dsm('tpl.php');
+  //dsm($node);
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
