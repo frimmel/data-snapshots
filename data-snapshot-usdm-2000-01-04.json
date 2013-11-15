@@ -34,10 +34,12 @@
                 }
             ]
         }, 
-        "field_dss_data_set": {
+        "field_dss_ds_mname": {
             "und": [
                 {
-                    "target_id": "1"
+                    "format": null, 
+                    "safe_value": "usdm", 
+                    "value": "usdm"
                 }
             ]
         }, 

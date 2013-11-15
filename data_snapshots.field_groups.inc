@@ -85,7 +85,7 @@ function data_snapshots_field_group_info() {
       2 => 'field_datasnapshot_day',
       3 => 'field_dss_date_generated',
       4 => 'field_dss_date_accessed',
-      5 => 'field_dss_data_set',
+      5 => 'field_dss_ds_mname',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

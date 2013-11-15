@@ -107,7 +107,7 @@
          <tr><td>field_datasnapshot_day</td>         <td><?php print $node->{'field_datasnapshot_day'}['und'][0]['value']; ?></td></tr>
          <tr><td>field_dss_date_generated</td>       <td><?php print $node->{'field_dss_date_generated'}['und'][0]['value']; ?></td></tr>
          <tr><td>field_dss_date_accessed</td>        <td><?php print $node->{'field_dss_date_accessed'}['und'][0]['value']; ?></td></tr>
-         <tr><td>field_dss_data_set nid</td>         <td><?php print $node->{'field_dss_data_set'}['und'][0]['target_id']; ?></td></tr>
+         <tr><td>field_dss_ds_mname</td>             <td><?php print $node->{'field_dss_ds_mname'}['und'][0]['value']; ?></td></tr>
          <tr><td>field_dss_displayed_image</td>      <td><img src="<?php print $node->{'field_dss_displayed_image'}['und'][0]['url']; ?>"></td></tr>
        </table>
      <?php else:
