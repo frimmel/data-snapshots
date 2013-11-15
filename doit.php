@@ -1,7 +1,7 @@
 <?php
 
-$dataset_nid = db_select('field_data_field_dssds_machine_name', 'f')
-    ->condition('field_dssds_machine_name_value', "usdm")
+$dataset_nid = db_select('field_data_field_dsds_mn', 'f')
+    ->condition('field_dsds_mn_value', "usdm")
     ->fields('f', array('entity_id'))
     ->execute()
     ->FetchField();

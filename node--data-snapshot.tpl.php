@@ -79,7 +79,7 @@
  */
   //dsm($view_mode);
   //dsm($node);
-  //dsm($content['field_datasnapshot_year']);
+  //dsm($content['field_ds_year']);
   dsm('tpl.php');
   dsm($node);
 ?>
@@ -104,13 +104,13 @@
     <?php
     if ($view_mode == "full"): ?>
       <table>
-         <tr><td>field_datasnapshot_year</td>        <td><?php print $node->{'field_datasnapshot_year'}['und'][0]['value']; ?></td></tr>
-         <tr><td>field_datasnapshot_month</td>       <td><?php print $node->{'field_datasnapshot_month'}['und'][0]['value']; ?></td></tr>
-         <tr><td>field_datasnapshot_day</td>         <td><?php print $node->{'field_datasnapshot_day'}['und'][0]['value']; ?></td></tr>
-         <tr><td>field_dss_date_generated</td>       <td><?php print $node->{'field_dss_date_generated'}['und'][0]['value']; ?></td></tr>
-         <tr><td>field_dss_date_accessed</td>        <td><?php print $node->{'field_dss_date_accessed'}['und'][0]['value']; ?></td></tr>
-         <tr><td>field_dss_ds_mname</td>             <td><?php print $node->{'field_dss_ds_mname'}['und'][0]['value']; ?></td></tr>
-         <tr><td>field_dss_displayed_image</td>      <td><img src="<?php print $node->{'field_dss_displayed_image'}['und'][0]['url']; ?>"></td></tr>
+         <tr><td>field_ds_year</td>        <td><?php print $node->{'field_ds_year'}['und'][0]['value']; ?></td></tr>
+         <tr><td>field_ds_mon</td>       <td><?php print $node->{'field_ds_mon'}['und'][0]['value']; ?></td></tr>
+         <tr><td>field_ds_day</td>         <td><?php print $node->{'field_ds_day'}['und'][0]['value']; ?></td></tr>
+         <tr><td>field_ds_dtgen</td>       <td><?php print $node->{'field_ds_dtgen'}['und'][0]['value']; ?></td></tr>
+         <tr><td>field_ds_dtacc</td>        <td><?php print $node->{'field_ds_dtacc'}['und'][0]['value']; ?></td></tr>
+         <tr><td>field_ds_dsds_mn</td>             <td><?php print $node->{'field_ds_dsds_mn'}['und'][0]['value']; ?></td></tr>
+         <tr><td>field_ds_disimg</td>      <td><img src="<?php print $node->{'field_ds_disimg'}['und'][0]['url']; ?>"></td></tr>
          <tr><td>Data Set</td>                       <td><?php print render($content['dataset']);  ?></td></tr>
        </table>
      <?php else:

@@ -3,13 +3,13 @@
 function data_snapshots_fields_data_snapshot_data_source() {
   $fields = array();
 
-  $fields['field_climate_gov_section'] = array(
+  $fields['field_dsds_cgsec'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_climate_gov_section',
+      'field_name' => 'field_dsds_cgsec',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -69,7 +69,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_climate_gov_section',
+      'field_name' => 'field_dsds_cgsec',
       'label' => 'Climate.gov Section',
       'required' => 1,
       'settings' => array(
@@ -86,13 +86,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_catalog_url'] = array(
+  $fields['field_dsds_caturl'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_catalog_url',
+      'field_name' => 'field_dsds_caturl',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -143,7 +143,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_catalog_url',
+      'field_name' => 'field_dsds_caturl',
       'label' => 'Dataset Catalog Record URL',
       'required' => 1,
       'settings' => array(
@@ -177,13 +177,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_colors'] = array(
+  $fields['field_dsds_colors'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_colors',
+      'field_name' => 'field_dsds_colors',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -231,7 +231,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_colors',
+      'field_name' => 'field_dsds_colors',
       'label' => 'How to Interpret Colors',
       'required' => 0,
       'settings' => array(
@@ -251,13 +251,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_data_access_url'] = array(
+  $fields['field_dsds_daurl'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_data_access_url',
+      'field_name' => 'field_dsds_daurl',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -308,7 +308,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_data_access_url',
+      'field_name' => 'field_dsds_daurl',
       'label' => 'Data Access URL',
       'required' => 1,
       'settings' => array(
@@ -342,13 +342,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_data_format'] = array(
+  $fields['field_dsds_dfmt'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_data_format',
+      'field_name' => 'field_dsds_dfmt',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -396,7 +396,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_data_format',
+      'field_name' => 'field_dsds_dfmt',
       'label' => 'Data Format Description',
       'required' => 0,
       'settings' => array(
@@ -416,13 +416,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_data_matters'] = array(
+  $fields['field_dsds_dmats'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_data_matters',
+      'field_name' => 'field_dsds_dmats',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -470,7 +470,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_data_matters',
+      'field_name' => 'field_dsds_dmats',
       'label' => 'Why This Data Matters',
       'required' => 0,
       'settings' => array(
@@ -490,13 +490,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_data_provider'] = array(
+  $fields['field_dsds_dprov'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_data_provider',
+      'field_name' => 'field_dsds_dprov',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -547,7 +547,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_data_provider',
+      'field_name' => 'field_dsds_dprov',
       'label' => 'Data Provider',
       'required' => 1,
       'settings' => array(
@@ -581,13 +581,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_description_auth'] = array(
+  $fields['field_dsds_dscaut'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_description_auth',
+      'field_name' => 'field_dsds_dscaut',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -636,7 +636,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_description_auth',
+      'field_name' => 'field_dsds_dscaut',
       'label' => 'Description Author',
       'required' => 1,
       'settings' => array(
@@ -656,13 +656,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_editorial_commen'] = array(
+  $fields['field_dsds_edcom'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_editorial_commen',
+      'field_name' => 'field_dsds_edcom',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -710,7 +710,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_editorial_commen',
+      'field_name' => 'field_dsds_edcom',
       'label' => 'Additional Editorial Comments',
       'required' => 0,
       'settings' => array(
@@ -730,13 +730,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_english_descript'] = array(
+  $fields['field_dsds_engdsc'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_english_descript',
+      'field_name' => 'field_dsds_engdsc',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -784,7 +784,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_english_descript',
+      'field_name' => 'field_dsds_engdsc',
       'label' => 'Plain English Description',
       'required' => 1,
       'settings' => array(
@@ -804,13 +804,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_framing_question'] = array(
+  $fields['field_dsds_framq'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_framing_question',
+      'field_name' => 'field_dsds_framq',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -858,7 +858,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_framing_question',
+      'field_name' => 'field_dsds_framq',
       'label' => 'Framing Question',
       'required' => 1,
       'settings' => array(
@@ -878,13 +878,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_image_frequency'] = array(
+  $fields['field_dsds_imgfrq'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_image_frequency',
+      'field_name' => 'field_dsds_imgfrq',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -940,7 +940,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_image_frequency',
+      'field_name' => 'field_dsds_imgfrq',
       'label' => 'Image Frequency',
       'required' => 1,
       'settings' => array(
@@ -957,13 +957,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_official_name'] = array(
+  $fields['field_dsds_offnam'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_official_name',
+      'field_name' => 'field_dsds_offnam',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1013,7 +1013,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_official_name',
+      'field_name' => 'field_dsds_offnam',
       'label' => 'Official Name',
       'required' => 1,
       'settings' => array(
@@ -1033,13 +1033,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_machine_name'] = array(
+  $fields['field_dsds_mn'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_machine_name',
+      'field_name' => 'field_dsds_mn',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1089,7 +1089,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_machine_name',
+      'field_name' => 'field_dsds_mn',
       'label' => 'Machine Name',
       'required' => 1,
       'settings' => array(
@@ -1109,13 +1109,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_plain_english_an'] = array(
+  $fields['field_dsds_engans'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_plain_english_an',
+      'field_name' => 'field_dsds_engans',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1162,7 +1162,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_plain_english_an',
+      'field_name' => 'field_dsds_engans',
       'label' => 'Plain English Answer',
       'required' => 1,
       'settings' => array(
@@ -1182,13 +1182,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_processing_envir'] = array(
+  $fields['field_dsds_prcenv'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_processing_envir',
+      'field_name' => 'field_dsds_prcenv',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1236,7 +1236,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_processing_envir',
+      'field_name' => 'field_dsds_prcenv',
       'label' => 'Processing Environment',
       'required' => 1,
       'settings' => array(
@@ -1256,13 +1256,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_processing_steps'] = array(
+  $fields['field_dsds_prcste'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_processing_steps',
+      'field_name' => 'field_dsds_prcste',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1310,7 +1310,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_processing_steps',
+      'field_name' => 'field_dsds_prcste',
       'label' => 'Outline of Processing Steps',
       'required' => 1,
       'settings' => array(
@@ -1330,13 +1330,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_references'] = array(
+  $fields['field_dsds_refs'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_references',
+      'field_name' => 'field_dsds_refs',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1384,7 +1384,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_references',
+      'field_name' => 'field_dsds_refs',
       'label' => 'References',
       'required' => 1,
       'settings' => array(
@@ -1404,13 +1404,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_reviewer'] = array(
+  $fields['field_dsds_rev'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_reviewer',
+      'field_name' => 'field_dsds_rev',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1460,7 +1460,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_reviewer',
+      'field_name' => 'field_dsds_rev',
       'label' => 'Reviewer',
       'required' => 1,
       'settings' => array(
@@ -1480,13 +1480,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_reviewer_affilia'] = array(
+  $fields['field_dsds_revaff'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_reviewer_affilia',
+      'field_name' => 'field_dsds_revaff',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1536,7 +1536,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_reviewer_affilia',
+      'field_name' => 'field_dsds_revaff',
       'label' => 'Affiliation of Reviewer',
       'required' => 1,
       'settings' => array(
@@ -1556,13 +1556,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_secondary_questi'] = array(
+  $fields['field_dsds_secq'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_secondary_questi',
+      'field_name' => 'field_dsds_secq',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1609,7 +1609,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_secondary_questi',
+      'field_name' => 'field_dsds_secq',
       'label' => 'Secondary Question',
       'required' => 1,
       'settings' => array(
@@ -1629,13 +1629,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_technical_commen'] = array(
+  $fields['field_dsds_teccom'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_technical_commen',
+      'field_name' => 'field_dsds_teccom',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -1683,7 +1683,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_technical_commen',
+      'field_name' => 'field_dsds_teccom',
       'label' => 'Additional Technical Comments',
       'required' => 0,
       'settings' => array(
@@ -1703,13 +1703,13 @@ function data_snapshots_fields_data_snapshot_data_source() {
     ),
   );
 
-  $fields['field_dssds_themes'] = array(
+  $fields['field_dsds_themes'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dssds_themes',
+      'field_name' => 'field_dsds_themes',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -1765,7 +1765,7 @@ function data_snapshots_fields_data_snapshot_data_source() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dssds_themes',
+      'field_name' => 'field_dsds_themes',
       'label' => 'Theme(s)',
       'required' => 1,
       'settings' => array(

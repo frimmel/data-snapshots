@@ -7,7 +7,7 @@
         "comment_count": "0", 
         "created": "1384369082", 
         "data": "b:0;", 
-        "field_datasnapshot_day": {
+        "field_ds_day": {
             "und": [
                 {
                     "format": null, 
@@ -16,7 +16,7 @@
                 }
             ]
         }, 
-        "field_datasnapshot_month": {
+        "field_ds_mon": {
             "und": [
                 {
                     "format": null, 
@@ -25,7 +25,7 @@
                 }
             ]
         }, 
-        "field_datasnapshot_year": {
+        "field_ds_year": {
             "und": [
                 {
                     "format": null, 
@@ -34,7 +34,7 @@
                 }
             ]
         }, 
-        "field_dss_ds_mname": {
+        "field_ds_dsds_mn": {
             "und": [
                 {
                     "format": null, 
@@ -43,7 +43,7 @@
                 }
             ]
         }, 
-        "field_dss_date_accessed": {
+        "field_ds_dtacc": {
             "und": [
                 {
                     "date_type": "datetime", 
@@ -53,7 +53,7 @@
                 }
             ]
         }, 
-        "field_dss_date_generated": {
+        "field_ds_dtgen": {
             "und": [
                 {
                     "date_type": "datetime", 
@@ -63,7 +63,7 @@
                 }
             ]
         }, 
-        "field_dss_displayed_image": {
+        "field_ds_disimg": {
             "und": [
                 {
                     "attributes": [], 
@@ -72,9 +72,9 @@
                 }
             ]
         }, 
-        "field_dss_downloads": [], 
-        "field_related_nodes": [], 
-        "field_term_clean": [], 
+        "field_ds_dloads": [], 
+        "field_ds_relnds": [], 
+        "field_ds_tclean": [], 
         "language": "und", 
         "last_comment_name": null, 
         "last_comment_timestamp": "1384369082", 

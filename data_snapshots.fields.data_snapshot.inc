@@ -86,13 +86,13 @@ function data_snapshots_fields_data_snapshot() {
   );
 */
 
-  $fields['field_datasnapshot_day'] = array(
+  $fields['field_ds_day'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_datasnapshot_day',
+      'field_name' => 'field_ds_day',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -142,7 +142,7 @@ function data_snapshots_fields_data_snapshot() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_datasnapshot_day',
+      'field_name' => 'field_ds_day',
       'label' => 'Day',
       'required' => 0,
       'settings' => array(
@@ -162,13 +162,13 @@ function data_snapshots_fields_data_snapshot() {
     ),
   );
 
-  $fields['field_datasnapshot_month'] = array(
+  $fields['field_ds_mon'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_datasnapshot_month',
+      'field_name' => 'field_ds_mon',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -218,7 +218,7 @@ function data_snapshots_fields_data_snapshot() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_datasnapshot_month',
+      'field_name' => 'field_ds_mon',
       'label' => 'Month',
       'required' => 0,
       'settings' => array(
@@ -238,13 +238,13 @@ function data_snapshots_fields_data_snapshot() {
     ),
   );
 
-  $fields['field_datasnapshot_year'] = array(
+  $fields['field_ds_year'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_datasnapshot_year',
+      'field_name' => 'field_ds_year',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -294,7 +294,7 @@ function data_snapshots_fields_data_snapshot() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_datasnapshot_year',
+      'field_name' => 'field_ds_year',
       'label' => 'Year',
       'required' => 0,
       'settings' => array(
@@ -314,13 +314,13 @@ function data_snapshots_fields_data_snapshot() {
     ),
   );
 
-  $fields['field_dss_ds_mname'] = array(
+  $fields['field_ds_dsds_mn'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dss_ds_mname',
+      'field_name' => 'field_ds_dsds_mn',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -370,7 +370,7 @@ function data_snapshots_fields_data_snapshot() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dss_ds_mname',
+      'field_name' => 'field_ds_dsds_mn',
       'label' => 'Data Set Machine Name',
       'required' => 0,
       'settings' => array(
@@ -483,13 +483,13 @@ function data_snapshots_fields_data_snapshot() {
   );
   */
 
-  $fields['field_dss_date_accessed'] = array(
+  $fields['field_ds_dtacc'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dss_date_accessed',
+      'field_name' => 'field_ds_dtacc',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -554,7 +554,7 @@ function data_snapshots_fields_data_snapshot() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dss_date_accessed',
+      'field_name' => 'field_ds_dtacc',
       'label' => 'Data Ingest Date',
       'required' => 1,
       'settings' => array(
@@ -584,13 +584,13 @@ function data_snapshots_fields_data_snapshot() {
     ),
   );
 
-  $fields['field_dss_date_generated'] = array(
+  $fields['field_ds_dtgen'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dss_date_generated',
+      'field_name' => 'field_ds_dtgen',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -655,7 +655,7 @@ function data_snapshots_fields_data_snapshot() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dss_date_generated',
+      'field_name' => 'field_ds_dtgen',
       'label' => 'Date Generated',
       'required' => 1,
       'settings' => array(
@@ -685,13 +685,13 @@ function data_snapshots_fields_data_snapshot() {
     ),
   );
 
-  $fields['field_dss_displayed_image'] = array(
+  $fields['field_ds_disimg'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dss_displayed_image',
+      'field_name' => 'field_ds_disimg',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -742,7 +742,7 @@ function data_snapshots_fields_data_snapshot() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dss_displayed_image',
+      'field_name' => 'field_ds_disimg',
       'label' => 'Displayed Image',
       'required' => 1,
       'settings' => array(
@@ -776,13 +776,13 @@ function data_snapshots_fields_data_snapshot() {
     ),
   );
 
-  $fields['field_dss_downloads'] = array(
+  $fields['field_ds_dloads'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_dss_downloads',
+      'field_name' => 'field_ds_dloads',
       'foreign keys' => array(),
       'indexes' => array(),
       'locked' => '0',
@@ -833,7 +833,7 @@ function data_snapshots_fields_data_snapshot() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_dss_downloads',
+      'field_name' => 'field_ds_dloads',
       'label' => 'Downloads',
       'required' => 0,
       'settings' => array(
@@ -867,13 +867,13 @@ function data_snapshots_fields_data_snapshot() {
     ),
   );
 
-  $fields['field_related_nodes'] = array(
+  $fields['field_ds_relnds'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_related_nodes',
+      'field_name' => 'field_ds_relnds',
       'foreign keys' => array(
         'node' => array(
           'columns' => array(
@@ -948,7 +948,7 @@ function data_snapshots_fields_data_snapshot() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_related_nodes',
+      'field_name' => 'field_ds_relnds',
       'label' => 'You Might Like',
       'required' => 0,
       'settings' => array(
@@ -969,13 +969,13 @@ function data_snapshots_fields_data_snapshot() {
     ),
   );
 
-  $fields['field_term_clean'] = array(
+  $fields['field_ds_tclean'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_term_clean',
+      'field_name' => 'field_ds_tclean',
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -1032,7 +1032,7 @@ function data_snapshots_fields_data_snapshot() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_term_clean',
+      'field_name' => 'field_ds_tclean',
       'label' => 'Topics',
       'required' => 0,
       'settings' => array(
