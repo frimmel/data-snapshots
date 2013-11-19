@@ -20,7 +20,7 @@ function data_snapshots_theme_registry_alter(&$theme_registry) {
 function data_snapshots_theme($existing, $type, $theme, $path) {
   return array (
     'node__data_snapshot' => array(
-      'template' => 'node--data-snapshot',
+      'template' => 'data-snapshot',
     ),
     'dataset-snapshot-block' => array(
       'variables' => array(
