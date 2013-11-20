@@ -49,11 +49,11 @@ function data_snapshots_field_group_info() {
     'label' => 'Editable Information',
     'weight' => '1',
     'children' => array(
-      0 => 'body',
-      1 => 'field_ds_relnds',
-      2 => 'field_ds_dloads',
-      3 => 'field_ds_disimg',
-      4 => 'title',
+      0 => 'title',
+      1 => 'body',
+      2 => 'field_ds_relnds',
+      3 => 'field_ds_dloads',
+      4 => 'field_ds_disimg',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

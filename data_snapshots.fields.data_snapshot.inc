@@ -2,7 +2,6 @@
 
 function data_snapshots_fields_data_snapshot() {
   $fields = array();
-
 /*
   $fields['body'] = array(
     'field_config' => array(
@@ -85,7 +84,6 @@ function data_snapshots_fields_data_snapshot() {
     ),
   );
 */
-
   $fields['field_ds_day'] = array(
     'field_config' => array(
       'active' => '1',
