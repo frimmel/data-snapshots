@@ -1,0 +1,85 @@
+.dss-main-container {
+  position: relative;
+  width: 940px;
+  height: 620px;
+}
+
+.dss-header {
+  position: absolute;
+  left: 5;
+  top: 0;
+/*background-color: #fcc; */
+  width: 930px !important;
+  height: 50px;
+  margin: 5px;
+}
+
+.dss-left-side {
+  position: absolute;
+  top: 50;
+  left: 0;
+/*background-color: #f00;*/
+  width: 620px !important;
+  margin: 5px;
+}
+
+.dss-right-side {
+  position: absolute;
+  top: 50;
+  right: 0;
+/*background-color: #0f0;*/
+  width: 300px !important;
+  margin: 5px;
+}
+
+.dss-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+/*background-color: #ccf;*/
+  width: 940px !important;
+  margin: 5px;
+}
+
+.dss-title {
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+.dss-evergreen-question {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-style: italic;
+  font-size: 14pt;
+}
+
+.dss-question-read-more {
+  float: right;
+}
+
+.dss-evergreen-answer {
+  margin-left: 15px;
+}
+
+.dss-download-social-container {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dss-downloads {
+  display: inline-block;
+  vertical-align: center;
+}
+
+.dss-social {
+  float: right;
+  display: inline-block;
+  vertical-align: center;
+}
+
