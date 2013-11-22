@@ -85,56 +85,51 @@
 ?>
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
-  <?php print render($title_prefix); ?>
-  <?php if (!$page): ?>
-    <h2<?php print $title_attributes; ?>>
-      <a href="<?php print $node_url; ?>"><?php print $title; ?></a>
-    </h2>
-  <?php endif; ?>
-  <?php print render($title_suffix); ?>
 
-  <?php if ($display_submitted): ?>
-    <div class="meta submitted">
-      <?php print $user_picture; ?>
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
+<?php if ($view_mode == "full") { ?>
 
-  <div class="content clearfix"<?php print $content_attributes; ?>>
-    <?php
-    if ($view_mode == "full"): ?>
-      <table>
-         <tr><td>field_ds_year</td>        <td><?php print $node->{'field_ds_year'}['und'][0]['value']; ?></td></tr>
-         <tr><td>field_ds_mon</td>       <td><?php print $node->{'field_ds_mon'}['und'][0]['value']; ?></td></tr>
-         <tr><td>field_ds_day</td>         <td><?php print $node->{'field_ds_day'}['und'][0]['value']; ?></td></tr>
-         <tr><td>field_ds_dtgen</td>       <td><?php print $node->{'field_ds_dtgen'}['und'][0]['value']; ?></td></tr>
-         <tr><td>field_ds_dtacc</td>        <td><?php print $node->{'field_ds_dtacc'}['und'][0]['value']; ?></td></tr>
-         <tr><td>field_ds_dsds_mn</td>             <td><?php print $node->{'field_ds_dsds_mn'}['und'][0]['value']; ?></td></tr>
-         <tr><td>field_ds_disimg</td>      <td><img src="<?php print $node->{'field_ds_disimg'}['und'][0]['url']; ?>"></td></tr>
-         <tr><td>Data Set</td>                       <td><?php print render($content['dataset']);  ?></td></tr>
-       </table>
-     <?php else:
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      print render($content); ?>
-    <?php endif; ?>
-  </div>
-  <?php
-    // Remove the "Add new comment" link on the teaser page or if the comment
-    // form is being displayed on the same page.
-    if ($teaser || !empty($content['comments']['comment_form'])) {
-      unset($content['links']['comment']['#links']['comment-add']);
-    }
-    // Only display the wrapper div if there are links.
-    $links = $content['links'];
-    if ($links):
-  ?>
-    <div class="link-wrapper">
-      <?php print $links; ?>
-    </div>
-  <?php endif; ?>
+    <div class="dss-wrapper">
+    
+      <div class="dss-header">
+        controls will go here
+      </div>  
 
-  <?php print render($content['comments']); ?>
+      <div class="dss-middle">  
+        <div class="dss-left-side">
+          <img src="<?php print $node->{'field_ds_disimg'}['und'][0]['url']; ?>">
+        </div> <!-- end dss-left-side -->
+        <div class="dss-right-side">
+          <div class="dss-title">Foobar: June 18, 2013</div>
+          <div class="dss-evergreen-question">
+            <?php print $node->{'dataset_node'}->{'field_dsds_framq'}['und'][0]['value']; ?>
+          </div>
+          <div class="dss-evergreen-answer">
+            <?php print $node->{'dataset_node'}->{'field_dsds_engans'}['und'][0]['value']; ?>
+            <span class="dss-question-read-more"><a href="#">read more...<a></span>
+          </div>  
+          <div class="dss-download-social-container">
+            <div class="dss-downloads">
+              <a href="#">Downloads</a>
+            </div>
+            <div class="dss-social">
+              <img src="<?php printf('/%s/', drupal_get_path('module', 'data_snapshots')); ?>/socialbuttons.png">
+            </div>
+          </div>
+          <div class="dss-metadata">
+            metadata fields go here
+          </div>  
+        </div> <!-- end dss-right-side -->
+      </div> <!-- end dss-middle -->
 
+      <div class="dss-footer">
+        <div class="dss-about-this-date">About This Date</div>
+        <div class="field-item even" property="content:encoded"> 
+          <p><?php print $node->{'body'}['und'][0]['value']; ?></p>
+        </div>
+      </div>  
+
+    </div> <!-- end dss-wrapper -->
+<?php } else { ?>
+    <div class="dss-title"><a href="<?php global $base_url; printf('%s/node/%1d', $base_url, $node->{'nid'}); ?>">Foobar: June 18, 2013</a></div>
+<?php } ?>
 </div>

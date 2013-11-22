@@ -14,3 +14,7 @@ drush -y en global_dependencies taxonomy_csv node_export
 
 # import some taxonomy vocab terms
 drush vocimp --vocabulary_id=section `pwd`/section-vocab.csv flat
+
+# set custom theme as default
+drush -y en mybartik
+drush -y vset theme_default mybartik

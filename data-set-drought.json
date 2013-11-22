@@ -133,8 +133,8 @@
             "und": [
                 {
                     "format": "filtered_html", 
-                    "safe_value": "<p>It's a kind of beer.  Oh no wait that's draught.</p>\n", 
-                    "value": "It's a kind of beer.  Oh no wait that's draught."
+                    "safe_value": "<p>It's a kind of beer.  Oh no wait that's draught.  Drought is when the tap runs dry.</p>\n", 
+                    "value": "It's a kind of beer.  Oh no wait that's draught.   Drought is when the tap runs dry."
                 }
             ]
         }, 

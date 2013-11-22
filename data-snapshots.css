@@ -1,24 +1,27 @@
-.dss-main-container {
-  position: relative;
+.dss-wrapper {
+  /*background-color: #f00;*/
   width: 940px;
-  height: 620px;
 }
 
 .dss-header {
-  position: absolute;
-  left: 5;
-  top: 0;
-/*background-color: #fcc; */
-  width: 930px !important;
-  height: 50px;
+  /*background-color: #f00;*/
   margin: 5px;
+}
+
+.dss-middle {
+  /*background-color: #0f0;*/
+  position: relative;
+  height: 475px;
+}
+
+.dss-footer {
+  /*background-color: #00f;*/
 }
 
 .dss-left-side {
   position: absolute;
   top: 50;
   left: 0;
-/*background-color: #f00;*/
   width: 620px !important;
   margin: 5px;
 }
@@ -27,17 +30,7 @@
   position: absolute;
   top: 50;
   right: 0;
-/*background-color: #0f0;*/
   width: 300px !important;
-  margin: 5px;
-}
-
-.dss-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-/*background-color: #ccf;*/
-  width: 940px !important;
   margin: 5px;
 }
 
@@ -83,3 +76,6 @@
   vertical-align: center;
 }
 
+.dss-about-this-date {
+  font-weight: bold;
+}
