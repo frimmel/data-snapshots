@@ -145,6 +145,6 @@
 
     </div> <!-- end dss-wrapper -->
 <?php } else { ?>
-    <div class="dss-title"><a href="<?php global $base_url; printf('%s/node/%1d', $base_url, $node->{'nid'}); ?>">Foobar: June 18, 2013</a></div>
+    <div class="dss-title"><a href="<?php global $base_url; printf('%s/node/%1d', $base_url, $node->{'nid'}); ?>"><?php print $title; ?></a></div>
 <?php } ?>
 </div>
