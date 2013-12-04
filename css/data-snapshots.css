@@ -79,3 +79,13 @@
 .dss-about-this-date {
   font-weight: bold;
 }
+
+/******************************************************************/
+
+#dss-timeslider, #dss-yearslider {
+  width: 400px;
+}
+
+#dss-timeslider-row {
+  margin-top: 20px;
+}

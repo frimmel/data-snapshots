@@ -90,8 +90,20 @@
 
     <div class="dss-wrapper">
     
-      <div class="dss-header">
-        controls will go here
+      <div class="dss-header dss-controls">
+        <table>
+          <tr>
+            <td>
+              Category:
+            </td>
+            <td>
+              <table>
+                <tr><td align="right">Year:</td><td><div id="dss-yearslider"></div></td></tr>
+                <tr id="dss-timeslider-row"><td align="right">Week:</td><td><div id="dss-timeslider"></div></td></tr>
+              </table>
+            </td>
+          </tr>
+        </table>
       </div>  
 
       <div class="dss-middle">  
