@@ -14,3 +14,6 @@ dependencies[] = node
 dependencies[] = options
 dependencies[] = taxonomy
 dependencies[] = text
+dependencies[] = feeds
+dependencies[] = feeds_import
+dependencies[] = feeds_ui
