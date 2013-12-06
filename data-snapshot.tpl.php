@@ -108,7 +108,7 @@
 
       <div class="dss-middle">  
         <div class="dss-left-side">
-          <img src="<?php print $node->{'field_ds_disimg'}['und'][0]['url']; ?>">
+          <img id="dss-disimg" src="<?php print $node->{'field_ds_disimg'}['und'][0]['url']; ?>">
         </div> <!-- end dss-left-side -->
         <div class="dss-right-side">
           <div class="dss-title"><?php printf("%s / %s",

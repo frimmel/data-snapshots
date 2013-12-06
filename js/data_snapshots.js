@@ -1,32 +1,59 @@
 function data_snapshots ($) {
 
+    function make_img_url(dsmn,ptk,stk) {
+        if (dsmn === "ghcntempm") {
+            return "http://datasnapshots-images.nemac.com:8080/ghcntemp/monthly/620/" + ptk + "/ghcntempm--620--" + ptk + "-" + stk + ".png";
+        }
+        return "http://datasnapshots-images.nemac.com:8080/usdm/620/" + ptk + "/usdm--620--" + ptk + "-" + stk + ".png";
+    }
+
+    function set_img(dsmn,ptk,stk) {
+        $('#dss-disimg').attr('src', make_img_url(dsmn,ptk,stk));
+    }
+
     $('document').ready(function() {
+        var dsmn = Drupal.settings.data_snapshots.snapshots.dsmn,
+            current_ptk_index = 0, // not correct, fix later!
+            current_stk_index = 0; // not correct, fix later!
+        var ptks = Drupal.settings.data_snapshots.snapshots.p;
+        var stks = [];
 
         $('#dss-yearslider').slider({
-            'min' : 2000,
-            'max' : 2013,
+            'min' : 0,
+            'max' : ptks.length-1,
+            'value' : current_ptk_index,
             'change' : function(event, ui) {
-                var new_year = $(this).slider('value');
-                console.log('Year changed to: ' + new_year);
+                current_ptk_index = $(this).slider('value');
+                stks = Drupal.settings.data_snapshots.snapshots.s[ptks[current_ptk_index]];
+                set_img(dsmn,ptks[current_ptk_index],stks[current_stk_index]);
+                config_stk_slider();
             },
             'slide' : function(event, ui) {
-                var new_year = $(this).slider('value');
-                console.log('Year slid to: ' + new_year);
+                current_ptk_index = $(this).slider('value');
+                stks = Drupal.settings.data_snapshots.snapshots.s[ptks[current_ptk_index]];
+                set_img(dsmn,ptks[current_ptk_index],stks[current_stk_index]);
             }
         });
 
-        $('#dss-timeslider').slider({
-            'min' : 0,
-            'max' : 100,
-            'change' : function(event, ui) {
-                var new_time = $(this).slider('value');
-                console.log('Time changed to: ' + new_time);
-            },
-            'slide' : function(event, ui) {
-                var new_time = $(this).slider('value');
-                console.log('Time slid to: ' + new_time);
-            }
-        });
+        function config_stk_slider() {
+            $('#dss-timeslider').slider({
+                'min' : 0,
+                'max' : stks.length-1,
+                'value' : current_stk_index,
+                'change' : function(event, ui) {
+                    current_stk_index = $(this).slider('value');
+                    set_img(dsmn,ptks[current_ptk_index],stks[current_stk_index]);
+                },
+                'slide' : function(event, ui) {
+                    current_stk_index = $(this).slider('value');
+                    set_img(dsmn,ptks[current_ptk_index],stks[current_stk_index]);
+                }
+            });
+
+        }
+
+        stks = Drupal.settings.data_snapshots.snapshots.s[ptks[current_ptk_index]];
+        config_stk_slider();
 
     });
 
