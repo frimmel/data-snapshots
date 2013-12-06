@@ -65,6 +65,15 @@ function data_snapshots_node_info() {
  */
 function data_snapshots_insert($node) {
   if ($node->type == "data_snapshot") {
+    db_insert('data_snapshots')
+      ->fields(array(
+        'nid'  => $node->{'nid'},
+        'guid' => "???",
+        'dsmn' => $node->{'field_ds_dsds_mn'}['und'][0]['value'],
+        'ptk'  =>$node->{'field_ds_ptk'}['und'][0]['value'],
+        'stk'  =>$node->{'field_ds_stk'}['und'][0]['value']
+      ))
+      ->execute();
   }
 }
 

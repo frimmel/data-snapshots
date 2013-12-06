@@ -114,14 +114,14 @@ function data_snapshots_schema() {
         'not null' => TRUE,
         'description' => "Dataset machine name for the node.",
       ),
-      'primary_time_key' => array(
+      'ptk' => array(
         'type' => 'varchar',
         'length' => 16,
         'not null' => TRUE,
         'default' => '',
         'description' => 'The primary time key for the node, typically the year.',
       ),
-      'secondary_time_key' => array(
+      'stk' => array(
         'type' => 'varchar',
         'length' => 16,
         'description' => 'The secondary time key for the node, e.g. MM-DD, optional.',
