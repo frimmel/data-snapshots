@@ -1,6 +1,6 @@
 #! /bin/bash
 
-drush -y en data_snapshots
+drush -y en data_snapshots devel
 
 drush vocimp --vocabulary_id=data_snapshot_data_set_frequency `pwd`/data_snapshot_data_set_frequency-vocab.csv flat
 

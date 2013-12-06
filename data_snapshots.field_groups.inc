@@ -80,12 +80,11 @@ function data_snapshots_field_group_info() {
     'label' => 'Image Metadata',
     'weight' => '2',
     'children' => array(
-      0 => 'field_ds_year',
-      1 => 'field_ds_mon',
-      2 => 'field_ds_day',
-      3 => 'field_ds_dtgen',
-      4 => 'field_ds_dtacc',
-      5 => 'field_ds_dsds_mn',
+      0 => 'field_ds_ptk',
+      1 => 'field_ds_stk',
+      2 => 'field_ds_dtgen',
+      3 => 'field_ds_dtacc',
+      4 => 'field_ds_dsds_mn',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

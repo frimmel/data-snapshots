@@ -84,6 +84,7 @@ function data_snapshots_fields_data_snapshot() {
     ),
   );
 */
+/*
   $fields['field_ds_day'] = array(
     'field_config' => array(
       'active' => '1',
@@ -159,14 +160,14 @@ function data_snapshots_fields_data_snapshot() {
       'workbench_access_field' => 0,
     ),
   );
-
-  $fields['field_ds_mon'] = array(
+*/
+  $fields['field_ds_stk'] = array(   // "secondary time key" field
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_ds_mon',
+      'field_name' => 'field_ds_stk',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -183,7 +184,7 @@ function data_snapshots_fields_data_snapshot() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
-        'max_length' => '2',
+        'max_length' => '8',
       ),
       'translatable' => '0',
       'type' => 'text',
@@ -192,7 +193,7 @@ function data_snapshots_fields_data_snapshot() {
       'bundle' => 'data_snapshot',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'The month for the data snapshot',
+      'description' => 'The secondary time key for this snapshot (often this is MM-DD, or just MM)',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -216,8 +217,8 @@ function data_snapshots_fields_data_snapshot() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ds_mon',
-      'label' => 'Month',
+      'field_name' => 'field_ds_stk',
+      'label' => 'Secondary Time Key',
       'required' => 0,
       'settings' => array(
         'text_processing' => '0',
@@ -227,7 +228,7 @@ function data_snapshots_fields_data_snapshot() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'size' => '6',
+          'size' => '8',
         ),
         'type' => 'text_textfield',
         'weight' => '21',
@@ -236,13 +237,13 @@ function data_snapshots_fields_data_snapshot() {
     ),
   );
 
-  $fields['field_ds_year'] = array(
+  $fields['field_ds_ptk'] = array( // "primary time key" field
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_ds_year',
+      'field_name' => 'field_ds_ptk',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -259,7 +260,7 @@ function data_snapshots_fields_data_snapshot() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
-        'max_length' => '4',
+        'max_length' => '8',
       ),
       'translatable' => '0',
       'type' => 'text',
@@ -268,7 +269,7 @@ function data_snapshots_fields_data_snapshot() {
       'bundle' => 'data_snapshot',
       'default_value' => NULL,
       'deleted' => '0',
-      'description' => 'The year the datasnapshot is for',
+      'description' => 'The primary time key for this snapshot (often this is the year)',
       'display' => array(
         'default' => array(
           'label' => 'above',
@@ -292,8 +293,8 @@ function data_snapshots_fields_data_snapshot() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_ds_year',
-      'label' => 'Year',
+      'field_name' => 'field_ds_ptk',
+      'label' => 'Primary Time Key',
       'required' => 0,
       'settings' => array(
         'text_processing' => '0',
@@ -303,7 +304,7 @@ function data_snapshots_fields_data_snapshot() {
         'active' => 1,
         'module' => 'text',
         'settings' => array(
-          'size' => '6',
+          'size' => '8',
         ),
         'type' => 'text_textfield',
         'weight' => '20',

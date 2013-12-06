@@ -1,8 +1,10 @@
 #! /bin/bash
 
 # import USDM data set node
-drush ne-import < data-set-drought-outlook.json
+drush ne-import < data-set-usdm.json 
+drush ne-import < data-set-ghcntempm.json
 #drush ne-import < data-snapshot-usdm-2000-01-04.json
 
 drush -y en feedsdrush ; drush cc all
-drush fim data_snapshot_importer http://datasnapshots-usdm-sample.nemac.com/feed.csv
+drush fim data_snapshot_importer http://datasnapshots-images.nemac.com/usdm/feed.csv
+drush fim data_snapshot_importer http://datasnapshots-images.nemac.com/ghcntemp/feed.csv

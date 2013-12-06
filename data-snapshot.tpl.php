@@ -111,10 +111,9 @@
           <img src="<?php print $node->{'field_ds_disimg'}['und'][0]['url']; ?>">
         </div> <!-- end dss-left-side -->
         <div class="dss-right-side">
-          <div class="dss-title"><?php printf("%04d-%02d-%02d",
-                                              $node->{'field_ds_year'}['und'][0]['value'],
-                                              $node->{'field_ds_mon'}['und'][0]['value'],
-                                              $node->{'field_ds_day'}['und'][0]['value']);  ?></div>
+          <div class="dss-title"><?php printf("%s / %s",
+                                              $node->{'field_ds_ptk'}['und'][0]['value'],
+                                              $node->{'field_ds_stk'}['und'][0]['value']);  ?></div>
           <div class="dss-evergreen-question">
             <?php print $node->{'dataset_node'}->{'field_dsds_framq'}['und'][0]['value']; ?>
           </div>

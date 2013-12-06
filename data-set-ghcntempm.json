@@ -25,8 +25,8 @@
             "und": [
                 {
                     "format": "filtered_html", 
-                    "safe_value": "<p>Golden areas are not currently in drought but are likely to become drier. Brown through tan areas are currently in some level of drought: conditions in dark brown areas are likely to persist or worsen, light brown areas are expected to see some improvement, and tan areas are expected to recover.</p>\n", 
-                    "value": "Golden areas are not currently in drought but are likely to become drier. Brown through tan areas are currently in some level of drought: conditions in dark brown areas are likely to persist or worsen, light brown areas are expected to see some improvement, and tan areas are expected to recover."
+                    "safe_value": "<p>Golden areas are not currently in heat but are likely to become drier. Brown through tan areas are currently in some level of freeze: conditions in dark brown areas are likely to persist or worsen, light brown areas are expected to see some improvement, and tan areas are expected to recover.</p>\n", 
+                    "value": "Golden areas are not currently in heat but are likely to become drier. Brown through tan areas are currently in some level of freeze: conditions in dark brown areas are likely to persist or worsen, light brown areas are expected to see some improvement, and tan areas are expected to recover."
                 }
             ]
         }, 
@@ -34,8 +34,8 @@
             "und": [
                 {
                     "attributes": [], 
-                    "title": "Monthly Drought Outlook", 
-                    "url": "http://www.cpc.ncep.noaa.gov/products/Drought/"
+                    "title": "GHCN Temp Anomaly", 
+                    "url": "https://www.ncdc.noaa.gov/temp-and-precip/ghcn-gridded-products.php"
                 }
             ]
         }, 
@@ -88,8 +88,8 @@
             "und": [
                 {
                     "format": "filtered_html", 
-                    "safe_value": "<p>Experts compare current conditions with the likelihood for below-, near-, or above normal precipitation in the next month to predict how drought conditions are likely to change.</p>\n", 
-                    "value": "Experts compare current conditions with the likelihood for below-, near-, or above normal precipitation in the next month to predict how drought conditions are likely to change."
+                    "safe_value": "<p>9 out of 10 experts agree: most of the hot air in the climate comes from politicians.</p>\n", 
+                    "value": "9 out of 10 experts agree: most of the hot air in the climate comes from politicians."
                 }
             ]
         }, 
@@ -106,8 +106,8 @@
             "und": [
                 {
                     "format": "filtered_html", 
-                    "safe_value": "<p>Where are drought conditions expected to set in, stay, improve, and end?</p>\n", 
-                    "value": "Where are drought conditions expected to set in, stay, improve, and end?"
+                    "safe_value": "<p>Where is it gonna be real hot?</p>\n", 
+                    "value": "Where is it gonna be real hot?"
                 }
             ]
         }, 
@@ -122,8 +122,8 @@
             "und": [
                 {
                     "format": null, 
-                    "safe_value": "droutlook", 
-                    "value": "droutlook"
+                    "safe_value": "ghcntempm",
+                    "value": "ghcntempm"
                 }
             ]
         }, 
@@ -131,8 +131,8 @@
             "und": [
                 {
                     "format": null, 
-                    "safe_value": "Monthly Drought Outlook", 
-                    "value": "Monthly Drought Outlook"
+                    "safe_value": "GHCN Temp Anomaly", 
+                    "value": "GHCN Temp Anomaly"
                 }
             ]
         }, 
@@ -185,8 +185,8 @@
             "und": [
                 {
                     "format": "filtered_html", 
-                    "safe_value": "<p>How do experts produce drought outlooks?</p>\n", 
-                    "value": "How do experts produce drought outlooks?"
+                    "safe_value": "<p>How do experts produce temperature anomalies?</p>\n", 
+                    "value": "How do experts produce temperature anomalies?"
                 }
             ]
         }, 
@@ -210,7 +210,7 @@
         "log": "", 
         "menu": null, 
         "name": "admin", 
-        "nid": "1", 
+        "nid": "2", 
         "node_export_drupal_version": "7", 
         "path": false, 
         "picture": "0", 
@@ -274,13 +274,13 @@
         "revision_uid": "1", 
         "status": "1", 
         "sticky": "0", 
-        "title": "Drought Outlook", 
+        "title": "GHCN Temp Anomaly", 
         "tnid": "0", 
         "translate": "0", 
         "type": "data_snapshot_data_source", 
         "uid": "1", 
-        "uuid": "df42f9a0-2edc-4826-b04d-6b3fd0f6df04", 
+        "uuid": "df42f9a0-2edc-4826-b04d-6b3fd0f6df05", 
         "vid": "1", 
-        "vuuid": "837a158b-57e2-4448-a881-e851cbcc2b21"
+        "vuuid": "837a158b-57e2-4448-a881-e851cbcc2b22"
     }
 ]

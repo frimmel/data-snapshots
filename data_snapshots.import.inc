@@ -49,31 +49,26 @@ function data_snapshots_feeds_importer_default() {
             'unique' => FALSE,
           ),
           2 => array(
-            'source' => 'year',
-            'target' => 'field_ds_year',
+            'source' => 'ptk',
+            'target' => 'field_ds_ptk',
             'unique' => FALSE,
           ),
           3 => array(
-            'source' => 'month',
-            'target' => 'field_ds_mon',
+            'source' => 'stk',
+            'target' => 'field_ds_stk',
             'unique' => FALSE,
           ),
           4 => array(
-            'source' => 'day',
-            'target' => 'field_ds_day',
-            'unique' => FALSE,
-          ),
-          5 => array(
             'source' => 'title',
             'target' => 'title',
             'unique' => 0,
           ),
-          6 => array(
+          5 => array(
             'source' => 'image_url',
             'target' => 'field_ds_disimg:url',
             'unique' => FALSE,
           ),
-          7 => array(
+          6 => array(
             'source' => 'about',
             'target' => 'body',
             'unique' => FALSE,
