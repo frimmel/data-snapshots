@@ -138,7 +138,7 @@
       <div class="dss-footer">
         <div class="dss-about-this-date">About This Date</div>
         <div class="field-item even" property="content:encoded"> 
-          <p><?php print $node->{'body'}['und'][0]['value']; ?></p>
+        <p><?php if ($node->{'body'} && $node->{'body'}['und']) { print $node->{'body'}['und'][0]['value']; } ?></p>
         </div>
       </div>  
 
