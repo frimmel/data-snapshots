@@ -9,6 +9,7 @@ function data_snapshots ($) {
 
     function set_img(dsmn,ptk,stk) {
         $('#dss-disimg').attr('src', make_img_url(dsmn,ptk,stk));
+        $('div.dss-title').text(ptk + ' / ' + stk);
     }
 
     $('document').ready(function() {
@@ -17,6 +18,13 @@ function data_snapshots ($) {
             current_stk_index = 0; // not correct, fix later!
         var ptks = Drupal.settings.data_snapshots.snapshots.p;
         var stks = [];
+
+        function hideStuff() {
+            $('.dss-footer').animate({'opacity' : 0.0}, 200);
+        }
+        function showStuff() {
+            $('.dss-footer').animate({'opacity' : 1.0}, 200);
+        }
 
         $('#dss-yearslider').slider({
             'min' : 0,
@@ -32,6 +40,12 @@ function data_snapshots ($) {
                 current_ptk_index = $(this).slider('value');
                 stks = Drupal.settings.data_snapshots.snapshots.s[ptks[current_ptk_index]];
                 set_img(dsmn,ptks[current_ptk_index],stks[current_stk_index]);
+            },
+            'start' : function(event, ui) {
+                hideStuff();
+            },
+            'stop' : function(event, ui) {
+                showStuff();
             }
         });
 
@@ -47,7 +61,13 @@ function data_snapshots ($) {
                 'slide' : function(event, ui) {
                     current_stk_index = $(this).slider('value');
                     set_img(dsmn,ptks[current_ptk_index],stks[current_stk_index]);
-                }
+                },
+                'start' : function(event, ui) {
+                    hideStuff();
+                },
+                'stop' : function(event, ui) {
+                    showStuff();
+                }           
             });
 
         }
