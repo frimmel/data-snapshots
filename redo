@@ -1,3 +1,3 @@
 #! /bin/bash
 
-./si ; ./en ; ./im
+.dev/si ; .dev/en ; .dev/im
