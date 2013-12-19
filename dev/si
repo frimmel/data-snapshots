@@ -4,7 +4,7 @@
 drush -y site-install
 
 # reset the admin user password
-drush upwd admin --password=`cat .password`
+drush upwd admin --password=`cat dev/.password`
 
 # disable comment module
 drush -y dis comment
@@ -13,7 +13,7 @@ drush -y dis comment
 drush -y en global_dependencies taxonomy_csv node_export
 
 # import some taxonomy vocab terms
-drush vocimp --vocabulary_id=section `pwd`/section-vocab.csv flat
+drush vocimp --vocabulary_id=section `pwd`/dev/section-vocab.csv flat
 
 # set custom theme as default
 drush -y en mybartik

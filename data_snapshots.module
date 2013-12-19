@@ -107,10 +107,10 @@ function data_snapshots_form($node, $form_state) {
 function data_snapshots_theme($existing, $type, $theme, $path) {
   return array (
     'node__data_snapshot' => array(      # when theming nodes of type data_snapshot,
-      'template' => 'data-snapshot',     #     use data-snapshot.tpl.php 
+      'template' => 'templates/data-snapshot',     #     use data-snapshot.tpl.php 
     ),
     'data-snapshot-sidebar' => array(          # when theme() is called like
-      'template' => 'data-snapshot-sidebar',   #   theme('data-snapshot-sidebar',...),
+      'template' => 'templates/data-snapshot-sidebar',   #   theme('data-snapshot-sidebar',...),
       'variables' => array(                    #   use data-snapshot-sidebar.tpl.php
         'data_set_name' => NULL,               #   along with these variables
         'data_set_number' => NULL
