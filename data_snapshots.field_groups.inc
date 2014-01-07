@@ -3,6 +3,7 @@
 /**
  * Implements hook_field_group_info().
  */
+  //REMOVE all groups associcated with the data source
 function data_snapshots_field_group_info() {
 
   $export = array();

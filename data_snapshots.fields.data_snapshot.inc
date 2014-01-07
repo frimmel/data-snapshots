@@ -1,5 +1,8 @@
 <?php
-
+  //REMOVE commented out fields
+  // Q: figure out what the shortened names mean
+  // Q: why are some lines commented out?
+  // Q: remove CLEAN taxonomy
 function data_snapshots_fields_data_snapshot() {
   $fields = array();
 /*

@@ -17,3 +17,6 @@ dependencies[] = text
 dependencies[] = feeds
 dependencies[] = feeds_import
 dependencies[] = feeds_ui
+# Q: add dependencies
+# Q: figure out if dependencies are only for data source
+# TODO: add missing components: context, display suite, etc

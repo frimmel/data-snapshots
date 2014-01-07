@@ -27,6 +27,7 @@ function data_snapshots_ctools_plugin_api() {
  */
 function data_snapshots_node_info() {
   $items = array(
+		 //REMOVE
     'data_snapshot_data_source' => array(
       'name' => t('Data Snapshot Data Source'),
       //NOTE: the setting for 'base' seems to determine (at least) two things:
@@ -48,6 +49,7 @@ function data_snapshots_node_info() {
       'title_label' => t('Public Name for Dataset'),
       'help' => '',
     ),
+    //REMOVEEND
     'data_snapshot' => array(
       'name' => t('Data Snapshot'),
       'base' => 'data_snapshots',
@@ -63,6 +65,9 @@ function data_snapshots_node_info() {
 /**
  * Implements hook_insert()
  */
+// Q: Why is guid '???'?
+// Q: What are the translations of these fields?
+// Q: What does hook_insert do?
 function data_snapshots_insert($node) {
   if ($node->type == "data_snapshot") {
     db_insert('data_snapshots')
@@ -80,6 +85,9 @@ function data_snapshots_insert($node) {
 /**
  * Implements hook_update()
  */
+// Q: Why is guid '???'?
+// Q: What are the translations of these fields?
+// Q: What does hook_update do?
 function data_snapshots_update($node) {
   if ($node->type == "data_snapshot") {
     db_update('data_snapshots')
@@ -97,6 +105,8 @@ function data_snapshots_update($node) {
 /**
  * Implements hook_form()
  */
+// Q: What does hook form do?
+// Q: WHat is node_content_form?
 function data_snapshots_form($node, $form_state) {
   return node_content_form($node, $form_state);
 }
@@ -104,6 +114,7 @@ function data_snapshots_form($node, $form_state) {
 /**
  * Implements hook_theme()
  */
+// Probably need to remove this and move this functionality back to display suite
 function data_snapshots_theme($existing, $type, $theme, $path) {
   return array (
     'node__data_snapshot' => array(      # when theming nodes of type data_snapshot,
@@ -138,6 +149,7 @@ function data_snapshots_load($nodes) {
  * I'm really not sure what the correct way to fetch a node field value is,
  * but this seems to work.  There has to be a better way, though.
  */
+// Q: This is for the following view I think??
 function _get_field_value($node, $field) {
   $q = field_get_items('node', $node, $field);
   return $q[0]['value'];
@@ -188,6 +200,9 @@ function _get_field_value($node, $field) {
  * data_snapshots_view() changes the structure of the $node object
  * that is available to the template file!!!
  */
+// Q: what do these fields translate to?
+// Q: figure out if there is a better place for the drupal_add_[css|js]?
+// Q: I think there are a few more parameters which help with the previous function and caching?
 function data_snapshots_view($node, $view_mode) {
   drupal_add_css(drupal_get_path('module', 'data_snapshots') . "/css/data-snapshots.css");
   drupal_add_css(drupal_get_path('module', 'data_snapshots') . "/js/jquery-ui/jquery-ui-1.10.3/themes/base/jquery.ui.all.css");
@@ -254,6 +269,7 @@ function data_snapshots_view($node, $view_mode) {
   //NOTE: hook_view MUST return $node
 }
 
+// Q: What does this do?
 function data_snapshots_node_type_insert($content_type) {
 
   if ($content_type->type == 'data_snapshot') {
@@ -275,6 +291,7 @@ function data_snapshots_node_type_insert($content_type) {
     }
   }
 
+  // Q: is this block needed?
   if ($content_type->type == 'data_snapshot_data_source') {
     foreach (data_snapshots_fields_data_snapshot_data_source() as $field) {
       field_create_field($field['field_config']);
@@ -290,6 +307,7 @@ function data_snapshots_node_type_insert($content_type) {
 /**
  * Implements hook_menu().
  */
+// Q: what exactly is being put into the menu?
 function data_snapshots_menu() {
 
   $items['data-snapshots/ajax'] = array(

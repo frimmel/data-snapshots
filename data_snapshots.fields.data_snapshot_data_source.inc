@@ -1,5 +1,5 @@
 <?php
-
+  //REMOVE this whole file once all changes to fields have been added to the other module
 function data_snapshots_fields_data_snapshot_data_source() {
   $fields = array();
 

@@ -1,5 +1,5 @@
 <?php
-
+  // Q: what is going on in commented out blocks. remove?
 
 
 /**
