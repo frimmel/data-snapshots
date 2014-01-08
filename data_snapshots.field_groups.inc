@@ -126,8 +126,9 @@ function data_snapshots_field_group_info() {
   );
   $export['group_dss_tabs|node|data_snapshot|form'] = $field_group;
 
+  /*
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = FALSE;
   $field_group->api_version = 1;
   $field_group->identifier = 'group_dssds_climate_gov|node|data_snapshot_data_source|form';
   $field_group->group_name = 'group_dssds_climate_gov';
@@ -157,7 +158,7 @@ function data_snapshots_field_group_info() {
   $export['group_dssds_climate_gov|node|data_snapshot_data_source|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = FALSE;
   $field_group->api_version = 1;
   $field_group->identifier = 'group_dssds_left_sidebar|node|data_snapshot_data_source|full';
   $field_group->group_name = 'group_dssds_left_sidebar';
@@ -194,7 +195,7 @@ function data_snapshots_field_group_info() {
   $export['group_dssds_left_sidebar|node|data_snapshot_data_source|full'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = FALSE;
   $field_group->api_version = 1;
   $field_group->identifier = 'group_dssds_metadata|node|data_snapshot_data_source|form';
   $field_group->group_name = 'group_dssds_metadata';
@@ -226,7 +227,7 @@ function data_snapshots_field_group_info() {
   $export['group_dssds_metadata|node|data_snapshot_data_source|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = FALSE;
   $field_group->api_version = 1;
   $field_group->identifier = 'group_dssds_processing|node|data_snapshot_data_source|form';
   $field_group->group_name = 'group_dssds_processing';
@@ -255,7 +256,7 @@ function data_snapshots_field_group_info() {
   $export['group_dssds_processing|node|data_snapshot_data_source|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = FALSE;
   $field_group->api_version = 1;
   $field_group->identifier = 'group_dssds_provider|node|data_snapshot_data_source|form';
   $field_group->group_name = 'group_dssds_provider';
@@ -284,7 +285,7 @@ function data_snapshots_field_group_info() {
   $export['group_dssds_provider|node|data_snapshot_data_source|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = FALSE;
   $field_group->api_version = 1;
   $field_group->identifier = 'group_dssds_tabs|node|data_snapshot_data_source|form';
   $field_group->group_name = 'group_dssds_tabs';
@@ -314,7 +315,7 @@ function data_snapshots_field_group_info() {
   $export['group_dssds_tabs|node|data_snapshot_data_source|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = FALSE;
   $field_group->api_version = 1;
   $field_group->identifier = 'group_dssds_text|node|data_snapshot_data_source|form';
   $field_group->group_name = 'group_dssds_text';
@@ -348,7 +349,7 @@ function data_snapshots_field_group_info() {
   $export['group_dssds_text|node|data_snapshot_data_source|form'] = $field_group;
 
   $field_group = new stdClass();
-  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->disabled = FALSE;
   $field_group->api_version = 1;
   $field_group->identifier = 'group_dssds_people|node|data_snapshot_data_source|form';
   $field_group->group_name = 'group_dssds_people';
@@ -375,6 +376,6 @@ function data_snapshots_field_group_info() {
     ),
   );
   $export['group_dssds_people|node|data_snapshot_data_source|form'] = $field_group;
-
+*/
   return $export;
 }

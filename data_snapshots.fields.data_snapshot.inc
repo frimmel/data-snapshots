@@ -970,7 +970,7 @@ function data_snapshots_fields_data_snapshot() {
       'workbench_access_field' => 0,
     ),
   );
-
+  /*
   $fields['field_ds_tclean'] = array(
     'field_config' => array(
       'active' => '1',
@@ -1052,6 +1052,6 @@ function data_snapshots_fields_data_snapshot() {
       'workbench_access_field' => 0,
     ),
   );
-
+  */
   return $fields;
 }
