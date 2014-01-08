@@ -1,10 +1,9 @@
 <?php
-  //REMOVE data source stuff
 
 include_once 'data_snapshots.fields.data_snapshot_data_source.inc';
 include_once 'data_snapshots.fields.data_snapshot.inc';
 include_once 'data_snapshots.field_groups.inc';
-
+/*
 function data_snapshots_install() {
 
   $vocab = array(
@@ -58,7 +57,7 @@ function data_snapshots_install() {
     );
     taxonomy_vocabulary_save((object)$vocab);
 }
-
+*/
 function data_snapshots_uninstall() {
   //
   // WARNING: delete (or comment out) this function before releasing this module.
