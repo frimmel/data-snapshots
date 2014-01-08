@@ -1,5 +1,5 @@
 name = Data Snapshots
-description = Provides Data Snapshot and Data Snapshot Data Set content types, and support for bla bla
+description = Provides Data Snapshot content type
 core = 7.x
 package = UNCA/NEMAC
 version = 7.x-1.0-beta1
