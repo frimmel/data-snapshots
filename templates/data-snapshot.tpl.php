@@ -115,10 +115,11 @@
                                               $node->{'field_ds_ptk'}['und'][0]['value'],
                                               $node->{'field_ds_stk'}['und'][0]['value']);  ?></div>
           <div class="dss-evergreen-question">
-            <?php print $node->{'dataset_node'}->{'field_dsds_framq'}['und'][0]['value']; ?>
+												  <?php dpm($node); ?>
+            <?php print $node->{'dataset_node'}->{'field_dssds_framing_question'}['und'][0]['value']; ?>
           </div>
           <div class="dss-evergreen-answer">
-            <?php print $node->{'dataset_node'}->{'field_dsds_engans'}['und'][0]['value']; ?>
+            <?php print $node->{'dataset_node'}->{'field_dssds_english_descript'}['und'][0]['value']; ?>
             <span class="dss-question-read-more"><a href="#">read more...<a></span>
           </div>  
           <div class="dss-download-social-container">

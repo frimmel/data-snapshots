@@ -5,7 +5,7 @@
         "comment": "2", 
         "created": "1385063594", 
         "data": "b:0;", 
-        "field_dsds_caturl": {
+        "field_dssds_catalog_url": {
             "und": [
                 {
                     "attributes": [], 
@@ -14,14 +14,7 @@
                 }
             ]
         }, 
-        "field_dsds_cgsec": {
-            "und": [
-                {
-                    "tid": "2"
-                }
-            ]
-        }, 
-        "field_dsds_colors": {
+        "field_dssds_colors": {
             "und": [
                 {
                     "format": "filtered_html", 
@@ -30,7 +23,7 @@
                 }
             ]
         }, 
-        "field_dsds_daurl": {
+        "field_dssds_data_access_url": {
             "und": [
                 {
                     "attributes": [], 
@@ -39,7 +32,7 @@
                 }
             ]
         }, 
-        "field_dsds_dfmt": {
+        "field_dssds_data_format": {
             "und": [
                 {
                     "format": "filtered_html", 
@@ -48,7 +41,7 @@
                 }
             ]
         }, 
-        "field_dsds_dmats": {
+        "field_dssds_data_matters": {
             "und": [
                 {
                     "format": "filtered_html", 
@@ -57,7 +50,7 @@
                 }
             ]
         }, 
-        "field_dsds_dprov": {
+        "field_dssds_data_provider": {
             "und": [
                 {
                     "attributes": [], 
@@ -66,7 +59,7 @@
                 }
             ]
         }, 
-        "field_dsds_dscaut": {
+        "field_dssds_description_auth": {
             "und": [
                 {
                     "format": "filtered_html", 
@@ -75,7 +68,7 @@
                 }
             ]
         }, 
-        "field_dsds_edcom": {
+        "field_dssds_editorial_commen": {
             "und": [
                 {
                     "format": "filtered_html", 
@@ -84,7 +77,7 @@
                 }
             ]
         }, 
-        "field_dsds_engans": {
+        "field_dssds_plain_english_an": {
             "und": [
                 {
                     "format": "filtered_html", 
@@ -93,7 +86,7 @@
                 }
             ]
         }, 
-        "field_dsds_engdsc": {
+        "field_dssds_english_descript": {
             "und": [
                 {
                     "format": "filtered_html", 
@@ -102,7 +95,7 @@
                 }
             ]
         }, 
-        "field_dsds_framq": {
+        "field_dssds_framing_question": {
             "und": [
                 {
                     "format": "filtered_html", 
@@ -111,14 +104,14 @@
                 }
             ]
         }, 
-        "field_dsds_imgfrq": {
+        "field_dssds_image_frequency": {
             "und": [
                 {
                     "tid": "7"
                 }
             ]
-        }, 
-        "field_dsds_mn": {
+        },
+        "field_dssds_machine_name": {
             "und": [
                 {
                     "format": null, 
@@ -127,7 +120,7 @@
                 }
             ]
         }, 
-        "field_dsds_offnam": {
+        "field_dssds_official_name": {
             "und": [
                 {
                     "format": null, 
@@ -136,7 +129,7 @@
                 }
             ]
         }, 
-        "field_dsds_prcenv": {
+        "field_dssds_processing_envir": {
             "und": [
                 {
                     "format": "filtered_html", 
@@ -145,7 +138,7 @@
                 }
             ]
         }, 
-        "field_dsds_prcste": {
+        "field_dssds_processing_steps": {
             "und": [
                 {
                     "format": "filtered_html", 
@@ -154,7 +147,7 @@
                 }
             ]
         }, 
-        "field_dsds_refs": {
+        "field_dssds_references": {
             "und": [
                 {
                     "format": "filtered_html", 
@@ -163,7 +156,7 @@
                 }
             ]
         }, 
-        "field_dsds_rev": {
+        "field_dssds_reviewer": {
             "und": [
                 {
                     "format": "filtered_html", 
@@ -172,7 +165,7 @@
                 }
             ]
         }, 
-        "field_dsds_revaff": {
+        "field_dssds_reviewer_affilia": {
             "und": [
                 {
                     "format": null, 
@@ -181,7 +174,7 @@
                 }
             ]
         }, 
-        "field_dsds_secq": {
+        "field_dssds_secondary_questi": {
             "und": [
                 {
                     "format": "filtered_html", 
@@ -190,7 +183,7 @@
                 }
             ]
         }, 
-        "field_dsds_teccom": {
+        "field_dssds_technical_commen": {
             "und": [
                 {
                     "format": "filtered_html", 
@@ -199,7 +192,7 @@
                 }
             ]
         }, 
-        "field_dsds_themes": {
+        "field_dssds_themes": {
             "und": [
                 {
                     "tid": "9"
